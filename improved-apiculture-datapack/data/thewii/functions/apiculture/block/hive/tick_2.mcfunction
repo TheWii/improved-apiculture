@@ -1,5 +1,6 @@
 # Destroyed
-execute at @s unless block ~ ~ ~ minecraft:bee_nest run function thewii:apiculture/block/hive/destroyed
+execute if entity @s[tag=twia.nest] at @s unless block ~ ~ ~ minecraft:bee_nest run function thewii:apiculture/block/hive/destroyed
+execute if entity @s[tag=twia.hive] at @s unless block ~ ~ ~ minecraft:beehive run function thewii:apiculture/block/hive/destroyed
 
 
 # Interval
@@ -16,4 +17,4 @@ execute if score #interval twvp.temp matches 0 if score #leave_hives twvp.temp m
 
 
 #
-#execute at @s run particle smoke ~ ~ ~ 0.275 0.275 0.275 0.025 2 normal
+execute at @s run particle smoke ~ ~ ~ 0.275 0.275 0.275 0.025 2 normal

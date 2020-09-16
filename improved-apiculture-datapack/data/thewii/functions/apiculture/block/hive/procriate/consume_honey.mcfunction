@@ -8,5 +8,6 @@ scoreboard players remove #honey_level twvp.temp 1
 data modify storage thewii:apiculture/temp bees set from block ~ ~ ~ Bees
 
 
-# Setblock bee bee_nest
-function thewii:apiculture/general/block/set_beenest
+# Setblock bee nest/hive
+execute if block ~ ~ ~ minecraft:bee_nest run function thewii:apiculture/general/block/set_beenest
+execute if block ~ ~ ~ minecraft:beehive run function thewii:apiculture/general/block/set_beehive
