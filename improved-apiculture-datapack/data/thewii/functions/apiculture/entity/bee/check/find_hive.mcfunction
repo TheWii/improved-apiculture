@@ -16,7 +16,6 @@ execute as @e[type=minecraft:area_effect_cloud,tag=twia.find_coord,limit=1] at @
 
 # Force found
 execute if entity @s[tag=twia.force_find] run data remove entity @s HasNectar
-execute if entity @s[tag=twia.force_find] run data remove entity @s FlowerPos
 tag @s remove twia.force_find
 
 # Tag

@@ -13,8 +13,13 @@ scoreboard players operation #interval twvp.temp = @s twia.interval
 scoreboard players operation #interval twvp.temp %= #10 twvp.math
 
 # Count bees
-execute if score #interval twvp.temp matches 0 if score #leave_hives twvp.temp matches 0 at @s run function thewii:apiculture/block/hive/count_bees
+execute if score #interval twvp.temp matches 0 if score #leave_hives twvp.temp matches 0 run function thewii:apiculture/block/hive/count_bees
 
+# Update honey level
+execute if score #interval twvp.temp matches 3 run function thewii:apiculture/block/hive/honey_level
+
+# Update model rotation
+execute if score #interval twvp.temp matches 6 run function thewii:apiculture/block/hive/update_rotation
 
 #
-execute at @s run particle smoke ~ ~ ~ 0.275 0.275 0.275 0.025 2 normal
+#execute at @s run particle smoke ~ ~ ~ 0.275 0.275 0.275 0.025 2 normal

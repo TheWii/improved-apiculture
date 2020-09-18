@@ -2,7 +2,7 @@
 function thewii:apiculture/general/block/facing
 
 # Consume
-scoreboard players remove #honey_level twvp.temp 1
+scoreboard players remove #honey_level twvp.temp 2
 
 # Store bees
 data modify storage thewii:apiculture/temp bees set from block ~ ~ ~ Bees

@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:439050,display:{Name:'{\"text\":\"Dark Oak Beehive\",\"italic\":false}'},EntityTag:{Tags:[\"twia.place\",\"twia.hive\",\"twia.hive.dark_oak\"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:\"minecraft:stone_button\",Count:1b,tag:{honey_level:\"0\",Bees:[],CustomModelData:430000}}}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

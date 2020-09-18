@@ -1,3 +1,5 @@
-execute at @s run particle minecraft:falling_honey ~ ~ ~ 0.275 0.275 0.275 1 50 normal
+# Drop item
+execute if entity @s[tag=twia.hive] run function thewii:apiculture/block/hive/drop_item
 
+# Kill self
 kill @s

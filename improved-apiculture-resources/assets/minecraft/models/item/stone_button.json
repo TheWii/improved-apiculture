@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:block/stone_button_inventory",
+  
+  "overrides": [
+    
+    { "predicate": { "custom_model_data": 430000 }, "model": "thewii:apiculture/invisible" },
+
+    
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/block/oak_beehive/0" },
+    { "predicate": { "custom_model_data": 439005 }, "model": "thewii:apiculture/block/oak_beehive/5" },
+
+    { "predicate": { "custom_model_data": 439010 }, "model": "thewii:apiculture/block/spruce_beehive/0" },
+    { "predicate": { "custom_model_data": 439015 }, "model": "thewii:apiculture/block/spruce_beehive/5" },
+
+    { "predicate": { "custom_model_data": 439020 }, "model": "thewii:apiculture/block/birch_beehive/0" },
+    { "predicate": { "custom_model_data": 439025 }, "model": "thewii:apiculture/block/birch_beehive/5" },
+
+    { "predicate": { "custom_model_data": 439030 }, "model": "thewii:apiculture/block/jungle_beehive/0" },
+    { "predicate": { "custom_model_data": 439035 }, "model": "thewii:apiculture/block/jungle_beehive/5" },
+
+    { "predicate": { "custom_model_data": 439040 }, "model": "thewii:apiculture/block/acacia_beehive/0" },
+    { "predicate": { "custom_model_data": 439045 }, "model": "thewii:apiculture/block/acacia_beehive/5" },
+
+    { "predicate": { "custom_model_data": 439050 }, "model": "thewii:apiculture/block/dark_oak_beehive/0" },
+    { "predicate": { "custom_model_data": 439055 }, "model": "thewii:apiculture/block/dark_oak_beehive/5" }
+
+  ]
+}

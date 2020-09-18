@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/spruce_beehive"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/spruce_beehive",
+    "loot": [
+      "thewii:apiculture/block/spruce_beehive"
+    ]
+  }
+}

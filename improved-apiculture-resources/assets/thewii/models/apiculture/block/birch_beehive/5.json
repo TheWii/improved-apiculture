@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "thewii:apiculture/block/model_block",
+	"textures": {
+		"0": "thewii:apiculture/block/birch_beehive",
+		"particle": "thewii:apiculture/block/birch_beehive"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 8, 8, 12], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"south": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"west": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"up": {"uv": [4, 0, 8, 4], "texture": "#0"},
+				"down": {"uv": [4, 0, 8, 4], "texture": "#0"}
+			}
+		}
+	]
+}

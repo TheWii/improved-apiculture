@@ -1,0 +1,17 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/item_frame"
+  },
+  
+  "overrides": [
+    
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/item/oak_beehive" },
+    { "predicate": { "custom_model_data": 439010 }, "model": "thewii:apiculture/item/spruce_beehive" },
+    { "predicate": { "custom_model_data": 439020 }, "model": "thewii:apiculture/item/birch_beehive" },
+    { "predicate": { "custom_model_data": 439030 }, "model": "thewii:apiculture/item/jungle_beehive" },
+    { "predicate": { "custom_model_data": 439040 }, "model": "thewii:apiculture/item/acacia_beehive" },
+    { "predicate": { "custom_model_data": 439050 }, "model": "thewii:apiculture/item/dark_oak_beehive" }
+
+  ]
+}

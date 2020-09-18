@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/acacia_beehive"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/acacia_beehive",
+    "loot": [
+      "thewii:apiculture/block/acacia_beehive"
+    ]
+  }
+}

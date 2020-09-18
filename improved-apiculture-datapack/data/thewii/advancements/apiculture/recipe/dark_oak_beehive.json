@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/dark_oak_beehive"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/dark_oak_beehive",
+    "loot": [
+      "thewii:apiculture/block/dark_oak_beehive"
+    ]
+  }
+}

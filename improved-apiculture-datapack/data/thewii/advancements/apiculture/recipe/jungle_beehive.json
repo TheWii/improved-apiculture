@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/jungle_beehive"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/jungle_beehive",
+    "loot": [
+      "thewii:apiculture/block/jungle_beehive"
+    ]
+  }
+}

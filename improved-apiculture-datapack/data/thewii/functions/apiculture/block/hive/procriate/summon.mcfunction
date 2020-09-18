@@ -1,5 +1,5 @@
 # Nbt
-data modify storage thewii:apiculture/temp newBee set value {EntityData:{id:"minecraft:bee",Tags:["twia.checked"],Age:-24000},MinOccupationTicks:1,TicksInHive:0}
+data modify storage thewii:apiculture/temp newBee set value {EntityData:{id:"minecraft:bee",Tags:["twia.twia.found_house"],Age:0},MinOccupationTicks:1,TicksInHive:0}
 
 # Copy HivePos
 data modify storage thewii:apiculture/temp newBee.EntityData.HivePos.X set from block ~ ~ ~ x
@@ -15,6 +15,9 @@ scoreboard players add @s twia.housing 1
 
 # Consume honey
 function thewii:apiculture/block/hive/procriate/consume_honey
+
+# Update honey level model
+function thewii:apiculture/block/hive/honey_level
 
 
 # Particles
