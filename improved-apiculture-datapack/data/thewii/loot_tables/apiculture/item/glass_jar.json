@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:439000,display:{Name:'{\"text\":\"Glass Jar\",\"italic\":false}',Lore:['{\"text\":\"Empty\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,HideFlags:127,apic:{hasContents:0b},ctc:{id:\"glass_jar\",from:\"thewii:apiculture\",traits:{\"item\":1b}}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -6,11 +6,19 @@
 
 #define score_holder #bee.sting_regen_time
 
+#define score_holder #item.glass_jar.max_nectar
+#define score_holder #item.glass_jar.nectar_per_bee
+#define score_holder #item.glass_jar.min_grow_rate
+#define score_holder #item.glass_jar.max_grow_rate
+
 #define score_holder #improved_apiculture
 
 #define score_holder #x
 #define score_holder #y
 #define score_holder #z
+
+#define score_holder #sneaking
+#define score_holder #found
 
 #define score_holder #interval
 
@@ -21,6 +29,8 @@
 
 #define storage thewii:apiculture/data
 #define storage thewii:apiculture/temp
+
+#define storage thewii:vp_library/temp
 
 #define tag twia.checked
 #define tag twia.find_coord
@@ -50,6 +60,7 @@ scoreboard objectives add twia.facing dummy
 scoreboard objectives add twia.honey dummy
 scoreboard objectives add twia.regen dummy
 scoreboard objectives add twia.placed minecraft.used:minecraft.item_frame
+scoreboard objectives add twia.clicked2 minecraft.used:minecraft.warped_fungus_on_a_stick
 
 scoreboard players set #-1 twvp.math -1
 scoreboard players set #5 twvp.math 5
@@ -61,6 +72,11 @@ team modify twia.nocollision collisionRule never
 
 # Set config
 scoreboard players set #bee.stinger_regen_time twia.data 10
+
+scoreboard players set #item.glass_jar.max_nectar twia.data 16
+scoreboard players set #item.glass_jar.nectar_per_bee twia.data 2
+scoreboard players set #item.glass_jar.min_grow_rate twia.data 1
+scoreboard players set #item.glass_jar.max_grow_rate twia.data 2
 
 
 # Schedules

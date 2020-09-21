@@ -1,0 +1,38 @@
+{
+	"parent": "thewii:apiculture/item/glass_jar/display",
+	"texture_size": [48, 48],
+	"textures": {
+		"1": "thewii:apiculture/item/glass_jar/glass_jar",
+		"particle": "thewii:apiculture/item/glass_jar/glass_jar"
+	},
+	"elements": [
+		{
+			"name": "glass",
+			"from": [0.5, 1, 0.5],
+			"to": [15.5, 20, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 12, 18]},
+			"faces": {
+				"north": {"uv": [11, 0, 16, 6.5], "texture": "#1"},
+				"east": {"uv": [6, 5, 11, 11.5], "texture": "#1"},
+				"south": {"uv": [11, 7, 16, 13.5], "texture": "#1"},
+				"west": {"uv": [1, 5, 6, 11.5], "texture": "#1"},
+				"up": {"uv": [0, 0, 5, 5], "texture": "#1"},
+				"down": {"uv": [5, 0, 10, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "jar_top",
+			"from": [3.5, 16.5, 3.5],
+			"to": [12.5, 22.5, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 25, 11]},
+			"faces": {
+				"north": {"uv": [8, 12, 11, 14], "texture": "#1"},
+				"east": {"uv": [7, 14, 10, 16], "texture": "#1"},
+				"south": {"uv": [13, 14, 16, 16], "texture": "#1"},
+				"west": {"uv": [10, 14, 13, 16], "texture": "#1"},
+				"up": {"uv": [0, 12, 3, 15], "texture": "#1"},
+				"down": {"uv": [3, 12, 6, 15], "texture": "#1"}
+			}
+		}
+	]
+}

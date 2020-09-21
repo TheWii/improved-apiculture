@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/glass_jar"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/glass_jar",
+    "loot": [
+      "thewii:apiculture/item/glass_jar"
+    ]
+  }
+}

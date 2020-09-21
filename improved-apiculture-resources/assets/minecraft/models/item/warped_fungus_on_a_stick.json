@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/warped_fungus_on_a_stick"
+  },
+  "overrides": [
+
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/item/glass_jar/empty" },
+    { "predicate": { "custom_model_data": 439001 }, "model": "thewii:apiculture/item/glass_jar/bee_stung" },
+    { "predicate": { "custom_model_data": 439002 }, "model": "thewii:apiculture/item/glass_jar/bee_stung_angry" },
+    { "predicate": { "custom_model_data": 439003 }, "model": "thewii:apiculture/item/glass_jar/bee_stung_nectar" },
+    { "predicate": { "custom_model_data": 439004 }, "model": "thewii:apiculture/item/glass_jar/bee_stung_angry_nectar" },
+    { "predicate": { "custom_model_data": 439005 }, "model": "thewii:apiculture/item/glass_jar/bee" },
+    { "predicate": { "custom_model_data": 439006 }, "model": "thewii:apiculture/item/glass_jar/bee_angry" },
+    { "predicate": { "custom_model_data": 439007 }, "model": "thewii:apiculture/item/glass_jar/bee_nectar" },
+    { "predicate": { "custom_model_data": 439008 }, "model": "thewii:apiculture/item/glass_jar/bee_angry_nectar" },
+
+    { "predicate": { "custom_model_data": 439009 }, "model": "thewii:apiculture/item/glass_jar/nectar_1" },
+    { "predicate": { "custom_model_data": 439010 }, "model": "thewii:apiculture/item/glass_jar/nectar_2" },
+    { "predicate": { "custom_model_data": 439011 }, "model": "thewii:apiculture/item/glass_jar/nectar_3" },
+    { "predicate": { "custom_model_data": 439012 }, "model": "thewii:apiculture/item/glass_jar/nectar_4" },
+    { "predicate": { "custom_model_data": 439013 }, "model": "thewii:apiculture/item/glass_jar/nectar_5" },
+    { "predicate": { "custom_model_data": 439014 }, "model": "thewii:apiculture/item/glass_jar/nectar_6" },
+    { "predicate": { "custom_model_data": 439015 }, "model": "thewii:apiculture/item/glass_jar/nectar_7" },
+    { "predicate": { "custom_model_data": 439016 }, "model": "thewii:apiculture/item/glass_jar/nectar_8" },
+    { "predicate": { "custom_model_data": 439017 }, "model": "thewii:apiculture/item/glass_jar/nectar_9" },
+    { "predicate": { "custom_model_data": 439018 }, "model": "thewii:apiculture/item/glass_jar/nectar_10" },
+    { "predicate": { "custom_model_data": 439019 }, "model": "thewii:apiculture/item/glass_jar/nectar_11" },
+    { "predicate": { "custom_model_data": 439020 }, "model": "thewii:apiculture/item/glass_jar/nectar_12" },
+    { "predicate": { "custom_model_data": 439021 }, "model": "thewii:apiculture/item/glass_jar/nectar_13" },
+    { "predicate": { "custom_model_data": 439022 }, "model": "thewii:apiculture/item/glass_jar/nectar_14" },
+    { "predicate": { "custom_model_data": 439023 }, "model": "thewii:apiculture/item/glass_jar/nectar_15" },
+    { "predicate": { "custom_model_data": 439024 }, "model": "thewii:apiculture/item/glass_jar/nectar_16" }
+
+  ]
+}

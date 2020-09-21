@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "nbt": "{ctc:{id:\"glass_jar\",from:\"thewii:alchemist\"}}"
+        }
+      }
+    }
+  }
