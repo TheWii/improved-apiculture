@@ -15,10 +15,10 @@ setblock ~ 255 ~ minecraft:air
 
 
 # Store honey level
-data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.honey_level set from storage thewii:apiculture/temp honey_level
+data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.honeyLevel set from storage thewii:apiculture/temp honeyLevel
 
 # Store bees
-data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.Bees set from storage thewii:apiculture/temp bees
+data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.bees set from storage thewii:apiculture/temp bees
 
 
 # Store item data

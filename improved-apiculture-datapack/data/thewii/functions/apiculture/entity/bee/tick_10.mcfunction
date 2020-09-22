@@ -22,8 +22,8 @@ execute if score @s twia.regen matches 1.. if score #regen_time twvp.temp matche
 # Flower
 scoreboard players operation #interval twvp.temp = @s twia.interval
 scoreboard players operation #interval twvp.temp %= #10 twvp.math
-execute if score #interval twvp.temp matches 0 run function thewii:apiculture/entity/bee/flower/start
-execute if entity @s[tag=twia.found_house] if score #interval twvp.temp matches 0 run function thewii:apiculture/entity/bee/check/start
+#execute if score #interval twvp.temp matches 0 run function thewii:apiculture/entity/bee/flower/start
+#execute if entity @s[tag=twia.found_house] if score #interval twvp.temp matches 0 run function thewii:apiculture/entity/bee/check/start
 
 
 # Targeting entity

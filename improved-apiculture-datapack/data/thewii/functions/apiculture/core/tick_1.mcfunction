@@ -11,7 +11,7 @@ execute if score #rain twvp.temp matches 1 run scoreboard players set #leave_hiv
 
 
 # Players
-execute as @a run function thewii:apiculture/player/tick_1
+#execute as @a run function thewii:apiculture/player/tick_1
 
 
 # Procriation time

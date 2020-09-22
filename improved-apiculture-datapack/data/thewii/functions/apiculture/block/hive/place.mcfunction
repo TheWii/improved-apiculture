@@ -1,6 +1,6 @@
 # Clear storage
 data remove storage thewii:apiculture/temp bees
-data remove storage thewii:apiculture/temp honey_level
+data remove storage thewii:apiculture/temp honeyLevel
 
 # Invert direction
 scoreboard players operation #input twvp.temp = #direction twvp.temp
@@ -9,16 +9,16 @@ scoreboard players operation #facing twvp.temp = #output twvp.temp
 
 
 # Set block
-data modify storage thewii:apiculture/temp bees set from entity @s Item.tag.Bees
+data modify storage thewii:apiculture/temp bees set from entity @s Item.tag.bees
 
 scoreboard players set #honey_level twvp.temp 0
-data modify storage thewii:apiculture/temp honey_level set from entity @s Item.tag.honey_level
+data modify storage thewii:apiculture/temp honeyLevel set from entity @s Item.tag.honeyLevel
 
-execute if data storage thewii:apiculture/temp {honey_level:'1'} run scoreboard players set #honey_level twvp.temp 1
-execute if data storage thewii:apiculture/temp {honey_level:'2'} run scoreboard players set #honey_level twvp.temp 2
-execute if data storage thewii:apiculture/temp {honey_level:'3'} run scoreboard players set #honey_level twvp.temp 3
-execute if data storage thewii:apiculture/temp {honey_level:'4'} run scoreboard players set #honey_level twvp.temp 4
-execute if data storage thewii:apiculture/temp {honey_level:'5'} run scoreboard players set #honey_level twvp.temp 5
+execute if data storage thewii:apiculture/temp {honeyLevel:'1'} run scoreboard players set #honey_level twvp.temp 1
+execute if data storage thewii:apiculture/temp {honeyLevel:'2'} run scoreboard players set #honey_level twvp.temp 2
+execute if data storage thewii:apiculture/temp {honeyLevel:'3'} run scoreboard players set #honey_level twvp.temp 3
+execute if data storage thewii:apiculture/temp {honeyLevel:'4'} run scoreboard players set #honey_level twvp.temp 4
+execute if data storage thewii:apiculture/temp {honeyLevel:'5'} run scoreboard players set #honey_level twvp.temp 5
 
 function thewii:apiculture/general/block/set_beehive
 

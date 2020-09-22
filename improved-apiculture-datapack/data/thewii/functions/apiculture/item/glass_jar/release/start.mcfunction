@@ -1,4 +1,5 @@
 # Get entity nbt
+data remove storage thewii:apiculture/temp entity
 data modify storage thewii:apiculture/temp entity set from storage thewii:apiculture/temp mainhand.tag.apic.contents
 
 # Summon entity
@@ -14,4 +15,4 @@ execute at @s run function thewii:apiculture/item/glass_jar/modify_hand
 
 
 # Effects
-execute if score #found twvp.temp matches 1 if score #sneaking twvp.temp matches 0 at @s run playsound minecraft:item.bottle.fill_dragonbreath player @s ~ ~ ~ 1 0.8
+execute if score #found twvp.temp matches 1.. at @s run playsound minecraft:item.bottle.fill_dragonbreath player @s ~ ~ ~ 1 0.8
