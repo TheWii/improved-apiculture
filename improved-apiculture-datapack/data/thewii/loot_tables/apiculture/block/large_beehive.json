@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:439060,display:{Name:'{\"text\":\"Large Beehive\",\"italic\":false}'},EntityTag:{Tags:[\"twia.place\",\"twia.large_hive\"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:\"minecraft:stone_button\",Count:1b,tag:{honey_level:\"0\",Bees:[],CustomModelData:430000}}}}"
+                "tag": "{CustomModelData:439060,display:{Name:'{\"text\":\"Large Beehive\",\"italic\":false}'},EntityTag:{Tags:[\"twvp.place_block\",\"twia.large_hive\"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:\"minecraft:stone_button\",Count:1b,tag:{honey_level:\"0\",bees:[],storageBees:[],CustomModelData:430000}}}}"
               }
             ]
           }

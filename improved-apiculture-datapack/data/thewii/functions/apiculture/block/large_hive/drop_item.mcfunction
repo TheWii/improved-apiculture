@@ -1,5 +1,5 @@
 # Default item nbt
-data modify storage thewii:apiculture/temp item set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439050,display:{Name:'{"text":"Large Beehive","italic":false}'},EntityTag:{Tags:["twia.place","twia.large_hive"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],CustomModelData:430000}}}}}
+data modify storage thewii:apiculture/temp item set from storage thewii:apiculture/data item.large_beehive
 
 # Read beehouse
 function thewii:apiculture/general/entity/dropped_item/read_beehouse
@@ -14,16 +14,12 @@ execute unless data storage thewii:apiculture/temp bees[0] if data storage thewi
 
 
 # Lore(Total bees in hive + storage)
-scoreboard players set #hive_amount twvp.temp 0
-execute store result score #hive_amount twvp.temp if data storage thewii:apiculture/temp bees[]
-scoreboard players operation #hive_amount twvp.temp += #storage_amount twvp.temp
+scoreboard players set #lore_bees twvp.temp 0
+execute store result score #lore_bees twvp.temp if data storage thewii:apiculture/temp bees[]
+scoreboard players operation #lore_bees twvp.temp += #storage_amount twvp.temp
 
-setblock ~ 255 ~ minecraft:oak_sign
-
-data modify block ~ 255 ~ Text1 set value '[{"score":{"name":"#hive_amount","objective":"twvp.temp"},"color":"dark_gray","italic":false},{"text":"x ","color":"dark_gray","italic":false},{"text":"Bees","color":"gray","italic":false}]'
-execute if score #hive_amount twvp.temp matches 1.. run data modify storage thewii:apiculture/temp item.tag.display.Lore append from block ~ 255 ~ Text1
-
-setblock ~ 255 ~ minecraft:air
+function thewii:apiculture/general/block/hive/lore
+execute if score #lore_bees twvp.temp matches 1.. run data modify storage thewii:apiculture/temp item.tag.display.Lore append from storage thewii:apiculture/temp lore
 
 
 # Store honey level

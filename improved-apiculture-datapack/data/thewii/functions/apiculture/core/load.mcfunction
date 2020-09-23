@@ -12,6 +12,7 @@ scoreboard players set #load thewii.load 1
 # Vanilla+ Lib Modules
 execute unless score #vplib.math thewii.load matches 010000 run scoreboard players set #load thewii.load -1
 execute unless score #vplib.click_detections thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score #vplib.block_placement thewii.load matches 010000 run scoreboard players set #load thewii.load -1
 
 # 1.16
 scoreboard players set #1.16 thewii.load 0

@@ -7,12 +7,11 @@ scoreboard objectives add twia.facing dummy
 scoreboard objectives add twia.honey dummy
 scoreboard objectives add twia.regen dummy
 scoreboard objectives add twia.max_housing dummy
-scoreboard objectives add twia.placed minecraft.used:minecraft.item_frame
 
 # Vanilla+ Lib modules
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/math/add
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/click_detections/add
-execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/loaded_chunk/add
+execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/block_placement/add
 
 
 # Vanilla+ Lib math scores

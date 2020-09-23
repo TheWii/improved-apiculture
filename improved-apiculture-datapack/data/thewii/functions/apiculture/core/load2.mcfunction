@@ -59,7 +59,7 @@ execute unless data storage thewii:apiculture/data installed run function thewii
 # Confirm if Vanilla+ Library modules are installed
 execute unless data storage thewii:vp_library/data modules.math run function thewii:vp_library/math/add
 execute unless data storage thewii:vp_library/data modules.click_detections run function thewii:vp_library/click_detections/add
-execute unless data storage thewii:vp_library/data modules.loaded_chunk run function thewii:vp_library/loaded_chunk/add
+execute unless data storage thewii:vp_library/data modules.block_placement run function thewii:vp_library/loaded_chunk/add
 
 # Set config
 function thewii:apiculture/core/load_config

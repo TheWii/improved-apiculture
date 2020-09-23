@@ -7,12 +7,11 @@ scoreboard objectives remove twia.facing
 scoreboard objectives remove twia.honey
 scoreboard objectives remove twia.regen
 scoreboard objectives remove twia.max_housing
-scoreboard objectives remove twia.placed
 
 # Vanilla+ Lib modules
 execute if data storage thewii:apiculture/data installed run function thewii:vp_library/math/remove
 execute if data storage thewii:apiculture/data installed run function thewii:vp_library/click_detections/remove
-execute if data storage thewii:apiculture/data installed run function thewii:vp_library/loaded_chunk/remove
+execute if data storage thewii:apiculture/data installed run function thewii:vp_library/block_placement/remove
 
 # Clear storages
 data remove storage thewii:apiculture/data version
