@@ -1,93 +1,28 @@
-#define objective thewii.load
-
-#define objective twvp.data
-#define objective twvp.temp
-#define objective twvp.math
-
-#define score_holder #bee.sting_regen_time
-
-#define score_holder #item.glass_jar.max_nectar
-#define score_holder #item.glass_jar.nectar_per_bee
-#define score_holder #item.glass_jar.min_grow_rate
-#define score_holder #item.glass_jar.max_grow_rate
-
-#define score_holder #improved_apiculture
-
-#define score_holder #x
-#define score_holder #y
-#define score_holder #z
-
-#define score_holder #sneaking
-#define score_holder #found
-
-#define score_holder #interval
-
-#define score_holder #bee_amount
-#define score_holder #marked_hive
-#define score_holder #honey_level
-#define score_holder #leave_hives
-
-#define storage thewii:apiculture/data
-#define storage thewii:apiculture/temp
-
-#define storage thewii:vp_library/temp
-
-#define tag twia.checked
-#define tag twia.find_coord
-
-#define tag twia.house
-
-#define tag twia.nest
-
-#define tag twia.hive
-
-#define tag twia.hive.oak
-#define tag twia.hive.spruce
-#define tag twia.hive.birch
-#define tag twia.hive.jungle
-#define tag twia.hive.acacia
-#define tag twia.hive.dark_oak
+# Clear schedules
+schedule clear thewii:apiculture/core/tick_2
+schedule clear thewii:apiculture/core/tick_5
+schedule clear thewii:apiculture/core/tick_10
+schedule clear thewii:apiculture/core/tick_20
+schedule clear thewii:apiculture/core/tick_100
 
 
-# Install
-scoreboard objectives add twia.data dummy
-scoreboard objectives add twvp.temp dummy
-scoreboard objectives add twvp.math dummy
+# Check dependencies
+scoreboard players set #load thewii.load 1
 
-scoreboard objectives add twia.interval dummy
-scoreboard objectives add twia.housing dummy
-scoreboard objectives add twia.facing dummy
-scoreboard objectives add twia.honey dummy
-scoreboard objectives add twia.regen dummy
-scoreboard objectives add twia.placed minecraft.used:minecraft.item_frame
-scoreboard objectives add twia.clicked2 minecraft.used:minecraft.warped_fungus_on_a_stick
+# Vanilla+ Lib Modules
+execute unless score #vplib.math thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score #vplib.click_detections thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score #vplib.block_placement thewii.load matches 010000 run scoreboard players set #load thewii.load -1
 
-scoreboard players set #-1 twvp.math -1
-scoreboard players set #5 twvp.math 5
-scoreboard players set #10 twvp.math 10
-scoreboard players set #20 twvp.math 20
-
-team add twia.nocollision "twia.nocollision"
-team modify twia.nocollision collisionRule never
-
-# Set config
-scoreboard players set #bee.stinger_regen_time twia.data 10
-
-scoreboard players set #item.glass_jar.max_nectar twia.data 16
-scoreboard players set #item.glass_jar.nectar_per_bee twia.data 2
-scoreboard players set #item.glass_jar.min_grow_rate twia.data 1
-scoreboard players set #item.glass_jar.max_grow_rate twia.data 2
+# 1.16
+scoreboard players set #1.16 thewii.load 0
+function thewii:apiculture/core/check_116
+execute unless score #1.16 thewii.load matches 1 run scoreboard players set #load thewii.load 0
 
 
-# Schedules
-schedule function thewii:apiculture/core/tick_2 1t
-schedule function thewii:apiculture/core/tick_5 2t
-schedule function thewii:apiculture/core/tick_10 1t
-schedule function thewii:apiculture/core/tick_20 2t
-schedule function thewii:apiculture/core/tick_100 4t
+# Success load
+execute if score #load thewii.load matches 1 run function thewii:apiculture/core/load2
 
-tellraw @a [{"text":"Apiculture loaded."}]
-
-
-# Load
-scoreboard players set #improved_apiculture thewii.load 000001
+# Fail load messages
+execute if score #load thewii.load matches 0 run tellraw @a [{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Improved Apiculture failed to load. It requires Minecraft 1.16 or above.","color":"white","bold":false}]
+execute if score #load thewii.load matches -1 run tellraw @a [{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Improved Apiculture failed to load. Library files are either missing or there are incompatibilities between installed datapacks. Please, download the latest version.","color":"white","bold":false}]

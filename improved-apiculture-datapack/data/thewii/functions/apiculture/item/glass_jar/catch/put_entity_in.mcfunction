@@ -7,5 +7,4 @@ execute if entity @s[type=minecraft:bee] run data modify storage thewii:apicultu
 data modify storage thewii:apiculture/temp contents.entityData set from entity @s
 
 # Kill entity
-tp @s ~ ~-1000 ~
-kill @s
+data merge entity @s {Health:0.0f,DeathTime:19s,DeathLootTable:"minecraft:air",ActiveEffects:[{Id:14b,Duration:20,Amplifier:0b,ShowParticles:0b}]} 

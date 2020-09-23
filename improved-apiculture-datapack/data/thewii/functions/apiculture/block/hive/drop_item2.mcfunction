@@ -1,24 +1,18 @@
 # Read beehouse
 function thewii:apiculture/general/entity/dropped_item/read_beehouse
 
+# Hive lore
+scoreboard players set #lore_bees twvp.temp 0
+execute store result score #lore_bees twvp.temp if data storage thewii:apiculture/temp bees[]
 
-# Lore
-scoreboard players set #bees twvp.temp 0
-execute store result score #bees twvp.temp if data storage thewii:apiculture/temp bees[]
-
-setblock ~ 255 ~ minecraft:oak_sign
-
-data modify block ~ 255 ~ Text1 set value '[{"score":{"name":"#bees","objective":"twvp.temp"},"color":"dark_gray","italic":false},{"text":"x ","color":"dark_gray","italic":false},{"text":"Bees","color":"gray","italic":false}]'
-data modify storage thewii:apiculture/temp item.tag.display.Lore append from block ~ 255 ~ Text1
-
-setblock ~ 255 ~ minecraft:air
-
+function thewii:apiculture/general/block/hive/lore
+execute if score #lore_bees twvp.temp matches 1.. run data modify storage thewii:apiculture/temp item.tag.display.Lore append from storage thewii:apiculture/temp lore
 
 # Store honey level
-data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.honey_level set from storage thewii:apiculture/temp honey_level
+data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.honeyLevel set from storage thewii:apiculture/temp honeyLevel
 
 # Store bees
-data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.Bees set from storage thewii:apiculture/temp bees
+data modify storage thewii:apiculture/temp item.tag.EntityTag.Item.tag.bees set from storage thewii:apiculture/temp bees
 
 
 # Store item data

@@ -1,0 +1,12 @@
+data remove storage thewii:apiculture/temp array
+data remove storage thewii:apiculture/temp bees
+data remove storage thewii:apiculture/temp honeyLevel
+data remove storage thewii:apiculture/temp storageBees
+data remove storage thewii:apiculture/temp hiveBees
+data remove storage thewii:apiculture/temp mainhand
+data remove storage thewii:apiculture/temp item
+data remove storage thewii:apiculture/temp hivePos
+data remove storage thewii:apiculture/temp flowerPos
+data remove storage thewii:apiculture/temp entity
+data remove storage thewii:apiculture/temp contents
+data remove storage thewii:apiculture/temp newBee
