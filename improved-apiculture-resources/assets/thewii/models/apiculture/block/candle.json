@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "thewii:apiculture/block/model_block",
+	"texture_size": [5, 5],
+	"textures": {
+		"1": "thewii:apiculture/block/candle",
+		"2": "thewii:apiculture/block/candle_fire",
+		"particle": "thewii:apiculture/block/candle_fire"
+	},
+	"elements": [
+		{
+			"from": [4.99, -0.01, 4.99],
+			"to": [11.01, 9.01, 11.01],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, 8, 13]},
+			"faces": {
+				"north": {"uv": [3, 3, 6.01, 7.51], "texture": "#1"},
+				"east": {"uv": [0, 3, 3.01, 7.51], "texture": "#1"},
+				"south": {"uv": [9, 3, 12.01, 7.51], "texture": "#1"},
+				"west": {"uv": [6, 3, 9.01, 7.51], "texture": "#1"},
+				"up": {"uv": [2.5, 0, 5.51, 3.01], "texture": "#1"},
+				"down": {"uv": [5.5, 0, 8.51, 3.01], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.99, 8.99, 6.48],
+			"to": [8.01, 13.01, 9.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [3.2, 0, 12.864, 12.864], "texture": "#2"},
+				"west": {"uv": [3.2, 0, 12.864, 12.864], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.99, 8.99, 6.48],
+			"to": [8.01, 13.01, 9.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [3.2, 0, 12.864, 12.864], "texture": "#2"},
+				"west": {"uv": [3.2, 0, 12.864, 12.864], "texture": "#2"}
+			}
+		}
+	]
+}

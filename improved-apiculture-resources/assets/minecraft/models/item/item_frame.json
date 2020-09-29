@@ -11,7 +11,8 @@
     { "predicate": { "custom_model_data": 439020 }, "model": "thewii:apiculture/item/birch_beehive" },
     { "predicate": { "custom_model_data": 439030 }, "model": "thewii:apiculture/item/jungle_beehive" },
     { "predicate": { "custom_model_data": 439040 }, "model": "thewii:apiculture/item/acacia_beehive" },
-    { "predicate": { "custom_model_data": 439050 }, "model": "thewii:apiculture/item/dark_oak_beehive" }
+    { "predicate": { "custom_model_data": 439050 }, "model": "thewii:apiculture/item/dark_oak_beehive" },
+    { "predicate": { "custom_model_data": 439070 }, "model": "thewii:apiculture/item/candle" }
 
   ]
 }
