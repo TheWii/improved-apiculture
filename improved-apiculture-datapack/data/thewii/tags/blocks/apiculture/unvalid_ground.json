@@ -1,7 +1,6 @@
 {
     "values": [
         "#thewii:vp_library/passable_block",
-        "#minecraft:stairs",
         "#minecraft:rails",
         "#minecraft:wall_post_override",
         "minecraft:lantern",

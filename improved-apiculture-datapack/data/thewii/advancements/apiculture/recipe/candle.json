@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/candle"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/candle",
+    "loot": [
+      "thewii:apiculture/block/candle"
+    ]
+  }
+}

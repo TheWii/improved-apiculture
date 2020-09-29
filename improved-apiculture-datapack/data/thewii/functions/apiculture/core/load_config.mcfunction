@@ -71,6 +71,10 @@
         ### Nbt
         data modify storage thewii:apiculture/data item.dark_oak_beehive set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439050,display:{Name:'{"text":"Dark Oak Beehive","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.hive","twia.hive.dark_oak"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],CustomModelData:430000}}}}}
 
-    ##
+    ## Candle
+
         ### Nbt
         data modify storage thewii:apiculture/data item.candle set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439070,display:{Name:'{"text":"Candle","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.candle"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],CustomModelData:430070}}}}}
+
+        ### Disable smoke
+        scoreboard players set #block.candle.disable_smoke twia.data 0

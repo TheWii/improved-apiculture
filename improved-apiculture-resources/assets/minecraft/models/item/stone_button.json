@@ -24,6 +24,9 @@
     { "predicate": { "custom_model_data": 439050 }, "model": "thewii:apiculture/block/dark_oak_beehive/0" },
     { "predicate": { "custom_model_data": 439055 }, "model": "thewii:apiculture/block/dark_oak_beehive/5" },
 
+    { "predicate": { "custom_model_data": 439060 }, "model": "thewii:apiculture/block/large_beehive/0" },
+    { "predicate": { "custom_model_data": 439065 }, "model": "thewii:apiculture/block/large_beehive/5" },
+
     { "predicate": { "custom_model_data": 439070 }, "model": "thewii:apiculture/block/candle" }
   ]
 }
