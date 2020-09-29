@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:439030,display:{Name:'{\"text\":\"Jungle Beehive\",\"italic\":false}'},EntityTag:{Tags:[\"twvp.place_block\",\"twia.hive\",\"twia.hive.jungle\"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:\"minecraft:stone_button\",Count:1b,tag:{honeyLevel:\"0\",bees:[],CustomModelData:430000}}}}"
+                "tag": "{ctc:{\"from\":\"thewii:apiculture\",\"id\":\"jungle_beehive\",\"traits\":{\"block\":1b,\"beehive\":1b,\"wood/jungle\":1b}},CustomModelData:439030,display:{Name:'{\"text\":\"Jungle Beehive\",\"italic\":false}'},EntityTag:{Tags:[\"twvp.place_block\",\"twia.hive\",\"twia.hive.jungle\"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:\"minecraft:stone_button\",Count:1b,tag:{honeyLevel:\"0\",bees:[],CustomModelData:430000}}}}"
               }
             ]
           }

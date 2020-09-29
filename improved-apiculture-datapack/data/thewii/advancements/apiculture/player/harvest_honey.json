@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "harvesthoney": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:shears"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "harvesthoney"
+        ]
+    ],
+    "rewards": {
+        "function": "thewii:apiculture/player/harvest_honey/start"
+    }
+}

@@ -10,9 +10,11 @@ execute if score #daytime twvp.temp matches 12542..23460 run scoreboard players 
 execute if score #rain twvp.temp matches 1 run scoreboard players set #leave_hives twvp.temp 0
 
 
+# Unchecked items
+execute as @e[type=minecraft:item,tag=!twia.checked] run function thewii:apiculture/entity/item/check
+
 # Players
 #execute as @a run function thewii:apiculture/player/tick_1
-
 
 # Procriation time
 execute if score #daytime twvp.temp matches 1 as @e[type=#thewii:apiculture/custom_block,tag=twia.house] run function thewii:apiculture/block/hive/procriate/start
