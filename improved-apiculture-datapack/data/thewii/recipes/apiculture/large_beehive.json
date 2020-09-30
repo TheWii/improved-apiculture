@@ -1,16 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " W ",
-        "G G",
-        "GGG"
+        "###",
+        "HHH",
+        "###"
     ],
     "key": {
-        "W": {
-            "tag": "minecraft:wooden_slabs"
+        "#": {
+            "item": "minecraft:iron_ingot"
         },
-        "G": {
-            "item": "minecraft:glass"
+        "H": {
+            "item": "minecraft:honeycomb"
         }
     },
     "result": {
