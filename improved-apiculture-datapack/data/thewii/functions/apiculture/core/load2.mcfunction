@@ -4,6 +4,7 @@
 #define objective twvp.temp
 #define objective twvp.math
 
+#define score_holder #bee.regen_stinger
 #define score_holder #bee.sting_regen_time
 
 #define score_holder #item.glass_jar.max_nectar
@@ -12,6 +13,8 @@
 #define score_holder #item.glass_jar.max_nectar_growth
 
 #define score_holder #block.large_beehive.max_housing
+
+#define score_holder #block.candle.disable_smoke
 
 #define score_holder #improved_apiculture
 
@@ -34,6 +37,7 @@
 #define storage thewii:apiculture/data
 #define storage thewii:apiculture/temp
 
+#define storage thewii:vp_library/data
 #define storage thewii:vp_library/temp
 
 #define tag twia.checked
@@ -59,7 +63,8 @@ execute unless data storage thewii:apiculture/data installed run function thewii
 # Confirm if Vanilla+ Library modules are installed
 execute unless data storage thewii:vp_library/data modules.math run function thewii:vp_library/math/add
 execute unless data storage thewii:vp_library/data modules.click_detections run function thewii:vp_library/click_detections/add
-execute unless data storage thewii:vp_library/data modules.block_placement run function thewii:vp_library/loaded_chunk/add
+execute unless data storage thewii:vp_library/data modules.block_placement run function thewii:vp_library/block_placement/add
+execute unless data storage thewii:vp_library/data modules.loaded_chunk run function thewii:vp_library/loaded_chunk/add
 
 # Set config
 function thewii:apiculture/core/load_config

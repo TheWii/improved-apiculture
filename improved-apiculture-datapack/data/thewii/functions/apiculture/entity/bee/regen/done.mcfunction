@@ -1,3 +1,5 @@
+#> thewii:apiculture/entity/bee/regen/done
+
 # Modify data
 data modify entity @s HasStung set value 0b
 

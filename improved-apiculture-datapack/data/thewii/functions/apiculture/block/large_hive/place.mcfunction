@@ -30,7 +30,7 @@ summon minecraft:armor_stand ~ ~0.5 ~ {Marker:1b,Small:1b,Invisible:1,Tags:["twi
 #tellraw @a {"score":{"name":"#facing","objective":"twvp.temp"}}
 data modify storage thewii:apiculture/temp storageBees set from entity @s Item.tag.storageBees
 
-execute as @e[type=minecraft:armor_stand,tag=twia.new_armorstand,limit=1] run function thewii:apiculture/block/large_hive/place_2
+execute as @e[type=minecraft:armor_stand,tag=twia.new_armorstand,limit=1] run function thewii:apiculture/block/large_hive/place2
 
 
 # Effects

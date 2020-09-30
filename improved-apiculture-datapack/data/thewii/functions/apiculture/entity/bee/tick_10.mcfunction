@@ -1,22 +1,21 @@
+#> thewii:apiculture/entity/bee/tick_10
+
 # Interval
 scoreboard players add @s twia.interval 1
 execute if score @s twia.interval matches 21.. run scoreboard players set @s twia.interval 1
 
 
-# Impossible to breed
-execute store result score #in_love twvp.temp run data get entity @s InLove
-execute if score #in_love twvp.temp matches 1.. run function thewii:apiculture/entity/bee/fed
+# Bee was fed by a player
+execute store result score #feed twvp.temp run data get entity @s InLove
+execute if score #feed twvp.temp matches 1.. run function thewii:apiculture/entity/bee/feed/main
+
 
 # Find bee house
 execute unless entity @s[tag=twia.found_house] run function thewii:apiculture/entity/bee/check/start
 
-# Has regeneration
-scoreboard players set #regen twvp.temp 0
-scoreboard players set #regen_time twvp.temp 0
-execute if predicate thewii:apiculture/entity/has_regeneration run scoreboard players set #regen twvp.temp 1
 
-execute if score #regen twvp.temp matches 1 if data entity @s {HasStung:1b} run function thewii:apiculture/entity/bee/regen/main
-execute if score @s twia.regen matches 1.. if score #regen_time twvp.temp matches 0 run scoreboard players reset @s twia.regen
+# Regenerate stinger
+execute if score #bee.regen_stinger twia.data matches 1 run function thewii:apiculture/entity/bee/regen/main
 
 
 # Flower

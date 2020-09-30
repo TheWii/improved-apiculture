@@ -1,18 +1,18 @@
 {
     "criteria": {
-        "beenest": {
+        "beehive": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "block": "minecraft:bee_nest"
+                "block": "minecraft:beehive"
             }
         }
     },
     "requirements": [
         [
-            "beenest"
+            "beehive"
         ]
     ],
     "rewards": {
-        "function": "thewii:apiculture/player/placed_nest/start"
+        "function": "thewii:apiculture/player/placed/hive/start"
     }
 }

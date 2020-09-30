@@ -31,7 +31,7 @@ execute if entity @s[tag=twia.hive.jungle] run summon minecraft:armor_stand ~ ~0
 execute if entity @s[tag=twia.hive.acacia] run summon minecraft:armor_stand ~ ~0.5 ~ {Marker:1b,Small:1b,Invisible:1,Tags:["twia.new_armorstand","twia.tick_2","twia.house","twia.hive","twia.hive.acacia"],ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{CustomModelData:439040}}]}
 execute if entity @s[tag=twia.hive.dark_oak] run summon minecraft:armor_stand ~ ~0.5 ~ {Marker:1b,Small:1b,Invisible:1,Tags:["twia.new_armorstand","twia.tick_2","twia.house","twia.hive","twia.hive.dark_oak"],ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{CustomModelData:439050}}]}
 
-execute as @e[type=minecraft:armor_stand,tag=twia.new_armorstand,limit=1] run function thewii:apiculture/block/hive/place_2
+execute as @e[type=minecraft:armor_stand,tag=twia.new_armorstand,limit=1] run function thewii:apiculture/block/hive/place2
 
 
 # Effects

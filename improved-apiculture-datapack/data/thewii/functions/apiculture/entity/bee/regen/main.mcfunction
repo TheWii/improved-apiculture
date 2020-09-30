@@ -1,6 +1,14 @@
-scoreboard players set #regen_time twvp.temp 1
+#> thewii:apiculture/entity/bee/regen/main
 
-execute at @s run particle minecraft:dust 1 1 1 1 ~ ~0.25 ~ 0.15 0.15 0.15 1 1 normal
+# Check if bee has regeneration
+scoreboard players set #regen twvp.temp 0
+scoreboard players set #active twvp.temp 0
 
-scoreboard players add @s twia.regen 1
-execute if score @s twia.regen >= #bee.stinger_regen_time twia.data if predicate thewii:vp_library/chance/25 run function thewii:apiculture/entity/bee/regen/done
+execute if predicate thewii:apiculture/entity/has_regeneration run scoreboard players set #regen twvp.temp 1
+
+
+# Start regeneration process if bee has regen and has stung
+execute if score #regen twvp.temp matches 1 if data entity @s {HasStung:1b} run function thewii:apiculture/entity/bee/regen/active
+
+# If regeneration process is cancelled reset score(If bee recovers its stinger with a third method or the regeneration effect is over)
+execute if score @s twia.regen matches 1.. if score #active twvp.temp matches 0 run scoreboard players reset @s twia.regen

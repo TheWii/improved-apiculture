@@ -12,6 +12,7 @@ scoreboard objectives add twia.max_housing dummy
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/math/add
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/click_detections/add
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/block_placement/add
+execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/loaded_chunk/add
 
 
 # Vanilla+ Lib math scores

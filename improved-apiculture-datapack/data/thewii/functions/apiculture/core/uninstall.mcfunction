@@ -12,6 +12,7 @@ scoreboard objectives remove twia.max_housing
 execute if data storage thewii:apiculture/data installed run function thewii:vp_library/math/remove
 execute if data storage thewii:apiculture/data installed run function thewii:vp_library/click_detections/remove
 execute if data storage thewii:apiculture/data installed run function thewii:vp_library/block_placement/remove
+execute if data storage thewii:apiculture/data installed run function thewii:vp_library/loaded_chunk/remove
 
 # Clear storages
 data remove storage thewii:apiculture/data version
