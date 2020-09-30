@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "equipped": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:chainmail_helmet",
+                        "nbt": "{ctc:{from:\"thewii:alchemist\",id:\"beekeeping_helmet\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "equipped"
+        ]
+    ],
+    "rewards": {
+        "function": "thewii:apiculture/item/beekeeping_helmet/inv"
+    }
+}

@@ -27,4 +27,5 @@ scoreboard players operation #interval twvp.temp %= #10 twvp.math
 
 
 # Targeting entity
+execute if predicate thewii:apiculture/entity/targeting_beekeeper run function thewii:apiculture/entity/bee/targeting/beekeeper
 #execute if predicate thewii:apiculture/entity/targeting at @s run particle flame ~ ~ ~ 0.2 0.2 0.2 0 5 normal 
