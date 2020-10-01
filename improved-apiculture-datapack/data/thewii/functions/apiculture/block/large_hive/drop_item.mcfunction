@@ -19,7 +19,8 @@ execute store result score #lore_bees twvp.temp if data storage thewii:apicultur
 scoreboard players operation #lore_bees twvp.temp += #storage_amount twvp.temp
 
 function thewii:apiculture/general/block/hive/lore
-execute if score #lore_bees twvp.temp matches 1.. run data modify storage thewii:apiculture/temp item.tag.display.Lore append from storage thewii:apiculture/temp lore
+data remove storage thewii:apiculture/temp item.tag.display.Lore
+data modify storage thewii:apiculture/temp item.tag.display.Lore set from storage thewii:apiculture/temp lore
 
 
 # Store honey level

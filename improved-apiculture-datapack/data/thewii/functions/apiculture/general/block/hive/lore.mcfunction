@@ -1,9 +1,11 @@
 # Lore
-setblock ~ 255 ~ minecraft:oak_sign
-
-data modify block ~ 255 ~ Text1 set value '[{"score":{"name":"#lore_bees","objective":"twvp.temp"},"color":"dark_gray","italic":false},{"text":"x ","color":"dark_gray","italic":false},{"text":"Bees","color":"gray","italic":false}]'
-
 data remove storage thewii:apiculture/temp lore
-data modify storage thewii:apiculture/temp lore set from block ~ 255 ~ Text1
+execute in minecraft:overworld run data remove block 29999999 0 4321 Text1
 
-setblock ~ 255 ~ minecraft:air
+# Honey
+execute in minecraft:overworld run data modify block 29999999 0 4321 Text1 set value '[{"text":"Honey: ","color":"gray","italic":false}, {"nbt":"honeyLevel","storage":"thewii:apiculture/temp","color":"dark_gray","italic":false}]'
+execute unless data storage thewii:apiculture/temp {honeyLevel:'0'} in minecraft:overworld run data modify storage thewii:apiculture/temp lore append from block 29999999 0 4321 Text1
+
+# Bees
+execute in minecraft:overworld run data modify block 29999999 0 4321 Text1 set value '[{"text":"Bees: ","color":"gray","italic":false},{"score":{"name":"#lore_bees","objective":"twvp.temp"},"color":"dark_gray","italic":false}]'
+execute if score #lore_bees twvp.temp matches 1.. in minecraft:overworld run data modify storage thewii:apiculture/temp lore append from block 29999999 0 4321 Text1
