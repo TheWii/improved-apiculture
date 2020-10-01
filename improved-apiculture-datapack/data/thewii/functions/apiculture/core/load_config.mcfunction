@@ -15,7 +15,7 @@
 
     ## Glass jar
 
-        ###
+        ### Nbt
         data modify storage thewii:apiculture/data item.glass_jar set value {id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:439000,display:{Name:'{"text":"Glass Jar","italic":false}',Lore:['{"text":"Empty","color":"gray","italic":false}']},Unbreakable:1b,HideFlags:127,apic:{hasContents:0b},ctc:{id:"glass_jar",from:"thewii:apiculture",traits:{"item":1b}}}}
 
         ### Max nectar capacity:
