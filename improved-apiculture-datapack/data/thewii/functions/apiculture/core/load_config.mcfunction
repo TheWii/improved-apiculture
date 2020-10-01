@@ -1,6 +1,6 @@
-### Improved Apiculture v0.0.1 ###
-# Only modify this file if you
-# know what you are doing.
+### Improved Apiculture v0.1.0 ###
+# Only modify this file if you know what you are doing.
+#
 
 # ENTITIES
 

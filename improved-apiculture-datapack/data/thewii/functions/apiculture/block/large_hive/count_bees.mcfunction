@@ -1,20 +1,20 @@
-data remove storage thewii:apiculture/temp hiveBees
-data remove storage thewii:apiculture/temp storageBees
+data remove storage thewii:vp_library/temp hiveBees
+data remove storage thewii:vp_library/temp storageBees
 
 # Get hive
-execute at @s run data modify storage thewii:apiculture/temp hiveBees set from block ~ ~ ~ Bees
+execute at @s run data modify storage thewii:vp_library/temp hiveBees set from block ~ ~ ~ Bees
 
 # Get storage
-data modify storage thewii:apiculture/temp storageBees set from entity @s ArmorItems[3].tag.bees
+data modify storage thewii:vp_library/temp storageBees set from entity @s ArmorItems[3].tag.bees
 
 
 # Count in-hive amount
 scoreboard players set #hive_amount twvp.temp 0
-execute store result score #hive_amount twvp.temp if data storage thewii:apiculture/temp hiveBees[]
+execute store result score #hive_amount twvp.temp if data storage thewii:vp_library/temp hiveBees[]
 
 # Count in-storage amount
 scoreboard players set #storage_amount twvp.temp 0
-execute store result score #storage_amount twvp.temp if data storage thewii:apiculture/temp storageBees[]
+execute store result score #storage_amount twvp.temp if data storage thewii:vp_library/temp storageBees[]
 
 # Get max in-storage
 scoreboard players operation #max twvp.temp = @s twia.max_housing

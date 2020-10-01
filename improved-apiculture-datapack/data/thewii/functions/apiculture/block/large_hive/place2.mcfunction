@@ -6,7 +6,7 @@ scoreboard players operation @s twia.facing = #facing twvp.temp
 function thewii:apiculture/block/large_hive/honey_level
 
 # Copy storage bees
-data modify entity @s ArmorItems[3].tag.bees set from storage thewii:apiculture/temp storageBees
+data modify entity @s ArmorItems[3].tag.bees set from storage thewii:vp_library/temp storageBees
 
 # Count bees
 function thewii:apiculture/block/large_hive/count_bees

@@ -1,3 +1,5 @@
+#> thewii:apiculture/item/beekeeping_hat/switch_item
+
 # Get inventory
 data remove storage thewii:vp_library/temp inventory
 data modify storage thewii:vp_library/temp inventory set from entity @s Inventory

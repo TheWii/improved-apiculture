@@ -3,7 +3,6 @@
 # Reset targets
 advancement revoke @s only thewii:apiculture/player/inventory_changed/beekeeping_hat
 
-
 # Copy inventory
 data remove storage thewii:vp_library/temp inventory
 data modify storage thewii:vp_library/temp inventory set from entity @s Inventory

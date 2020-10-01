@@ -1,1 +1,1 @@
-execute if data storage thewii:apiculture/temp entity{id:"minecraft:bee"} run summon minecraft:bee ~ ~ ~ {Tags:["twia.new_entity"]}
+execute if data storage thewii:vp_library/temp entity{id:"minecraft:bee"} run summon minecraft:bee ~ ~ ~ {Tags:["twia.new_entity"]}

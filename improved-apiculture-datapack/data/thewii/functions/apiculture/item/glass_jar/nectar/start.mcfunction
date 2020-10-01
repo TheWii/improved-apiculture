@@ -2,7 +2,7 @@
 
 # nectar ammount
 scoreboard players set #amount twvp.temp 0
-execute store result score #amount twvp.temp run data get storage thewii:apiculture/temp mainhand.tag.apic.contents.nectarAmount
+execute store result score #amount twvp.temp run data get storage thewii:vp_library/temp mainhand.tag.apic.contents.nectarAmount
 #tellraw @a {"score":{"name":"#amount","objective": "twvp.temp"}}
 
 

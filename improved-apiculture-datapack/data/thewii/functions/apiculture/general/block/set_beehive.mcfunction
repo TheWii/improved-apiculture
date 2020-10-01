@@ -30,4 +30,4 @@ execute if score #facing twvp.temp matches 4 if score #honey_level twvp.temp mat
 execute if score #facing twvp.temp matches 4 if score #honey_level twvp.temp matches 4 run setblock ~ ~ ~ minecraft:beehive[facing=west,honey_level=4]
 execute if score #facing twvp.temp matches 4 if score #honey_level twvp.temp matches 5 run setblock ~ ~ ~ minecraft:beehive[facing=west,honey_level=5]
 
-data modify block ~ ~ ~ Bees set from storage thewii:apiculture/temp bees
+data modify block ~ ~ ~ Bees set from storage thewii:vp_library/temp bees

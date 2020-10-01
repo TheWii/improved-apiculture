@@ -1,6 +1,6 @@
 # Get bees from storage
-data remove storage thewii:apiculture/temp storageBees
-data modify storage thewii:apiculture/temp storageBees set from entity @s ArmorItems[3].tag.bees
+data remove storage thewii:vp_library/temp storageBees
+data modify storage thewii:vp_library/temp storageBees set from entity @s ArmorItems[3].tag.bees
 
 # Drop item
 scoreboard players set #max_age twvp.temp 1

@@ -13,7 +13,6 @@ execute if score #rain twvp.temp matches 1 run scoreboard players set #leave_hiv
 # Unchecked items
 execute as @e[type=minecraft:item,tag=!twia.checked] run function thewii:apiculture/entity/item/check
 
-
 # Players
 
 ## Equipped armor

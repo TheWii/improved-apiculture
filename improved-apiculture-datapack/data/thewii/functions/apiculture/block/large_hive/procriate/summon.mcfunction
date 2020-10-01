@@ -1,13 +1,13 @@
 # Nbt
-data modify storage thewii:apiculture/temp newBee set value {EntityData:{id:"minecraft:bee",Tags:["twia.twia.found_house"],Age:0},MinOccupationTicks:1,TicksInHive:0}
+data modify storage thewii:vp_library/temp newBee set value {EntityData:{id:"minecraft:bee",Tags:["twia.twia.found_house"],Age:0},MinOccupationTicks:1,TicksInHive:0}
 
 # Copy HivePos
-data modify storage thewii:apiculture/temp newBee.EntityData.HivePos.X set from block ~ ~ ~ x
-data modify storage thewii:apiculture/temp newBee.EntityData.HivePos.Y set from block ~ ~ ~ y
-data modify storage thewii:apiculture/temp newBee.EntityData.HivePos.Z set from block ~ ~ ~ z
+data modify storage thewii:vp_library/temp newBee.EntityData.HivePos.X set from block ~ ~ ~ x
+data modify storage thewii:vp_library/temp newBee.EntityData.HivePos.Y set from block ~ ~ ~ y
+data modify storage thewii:vp_library/temp newBee.EntityData.HivePos.Z set from block ~ ~ ~ z
 
 # Append bee
-data modify block ~ ~ ~ Bees append from storage thewii:apiculture/temp newBee
+data modify block ~ ~ ~ Bees append from storage thewii:vp_library/temp newBee
 
 
 # Increase housing space

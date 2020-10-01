@@ -1,5 +1,5 @@
 # Leave storage
-execute at @s run data modify block ~ ~ ~ Bees append from storage thewii:apiculture/temp storageBees[0]
+execute at @s run data modify block ~ ~ ~ Bees append from storage thewii:vp_library/temp storageBees[0]
 data remove entity @s ArmorItems[3].tag.bees[0]
 
 scoreboard players remove #storage_amount twia.housing 1

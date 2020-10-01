@@ -1,7 +1,7 @@
 # Get coords
-execute store result score #x twvp.temp run data get storage thewii:apiculture/temp hivePos.X 10
-execute store result score #y twvp.temp run data get storage thewii:apiculture/temp hivePos.Y 10
-execute store result score #z twvp.temp run data get storage thewii:apiculture/temp hivePos.Z 10
+execute store result score #x twvp.temp run data get storage thewii:vp_library/temp hivePos.X 10
+execute store result score #y twvp.temp run data get storage thewii:vp_library/temp hivePos.Y 10
+execute store result score #z twvp.temp run data get storage thewii:vp_library/temp hivePos.Z 10
 
 scoreboard players add #x twvp.temp 5
 scoreboard players add #y twvp.temp 5

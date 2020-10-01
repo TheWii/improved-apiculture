@@ -1,5 +1,34 @@
 #> thewii:apiculture/core/load2
 
+# Datapack version
+scoreboard players set $improved_apiculture thewii.load 000100
+
+# Install
+execute unless data storage thewii:apiculture/data installed run function thewii:apiculture/core/install
+
+# Confirm if Vanilla+ Library modules are installed
+execute unless data storage thewii:vp_library/data modules.math run function thewii:vp_library/math/add
+execute unless data storage thewii:vp_library/data modules.click_detections run function thewii:vp_library/click_detections/add
+execute unless data storage thewii:vp_library/data modules.block_placement run function thewii:vp_library/block_placement/add
+execute unless data storage thewii:vp_library/data modules.loaded_chunk run function thewii:vp_library/loaded_chunk/add
+
+# Set config
+function thewii:apiculture/core/load_config
+
+# Update
+execute store result score $version.merged twia.data run data get storage thewii:apiculture/data version.merged
+execute if score $improved_apiculture thewii.load > $version.merged twia.data run function thewii:apiculture/core/update
+
+# Schedules
+schedule function thewii:apiculture/core/tick_2 1t
+schedule function thewii:apiculture/core/tick_5 2t
+schedule function thewii:apiculture/core/tick_10 1t
+schedule function thewii:apiculture/core/tick_20 2t
+schedule function thewii:apiculture/core/tick_100 4t
+
+
+
+# Declarations
 #define objective thewii.load
 
 #define objective twvp.data
@@ -18,7 +47,7 @@
 
 #define score_holder #block.candle.disable_smoke
 
-#define score_holder #improved_apiculture
+#define score_holder $improved_apiculture
 
 #define score_holder #x
 #define score_holder #y
@@ -56,29 +85,3 @@
 #define tag twia.hive.jungle
 #define tag twia.hive.acacia
 #define tag twia.hive.dark_oak
-
-# Datapack version
-scoreboard players set $improved_apiculture thewii.load 000100
-
-# Install
-execute unless data storage thewii:apiculture/data installed run function thewii:apiculture/core/install
-
-# Confirm if Vanilla+ Library modules are installed
-execute unless data storage thewii:vp_library/data modules.math run function thewii:vp_library/math/add
-execute unless data storage thewii:vp_library/data modules.click_detections run function thewii:vp_library/click_detections/add
-execute unless data storage thewii:vp_library/data modules.block_placement run function thewii:vp_library/block_placement/add
-execute unless data storage thewii:vp_library/data modules.loaded_chunk run function thewii:vp_library/loaded_chunk/add
-
-# Set config
-function thewii:apiculture/core/load_config
-
-# Update
-execute store result score $version.merged twia.data run data get storage thewii:apiculture/data version.merged
-execute if score $improved_apiculture thewii.load > $version.merged twia.data run function thewii:apiculture/core/update
-
-# Schedules
-schedule function thewii:apiculture/core/tick_2 1t
-schedule function thewii:apiculture/core/tick_5 2t
-schedule function thewii:apiculture/core/tick_10 1t
-schedule function thewii:apiculture/core/tick_20 2t
-schedule function thewii:apiculture/core/tick_100 4t

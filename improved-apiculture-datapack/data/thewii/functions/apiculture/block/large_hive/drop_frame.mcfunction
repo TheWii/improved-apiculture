@@ -1,12 +1,12 @@
 # Copy item fram data
-data remove storage thewii:apiculture/temp bees
-data modify storage thewii:apiculture/temp bees set from entity @s Item.tag.bees
+data remove storage thewii:vp_library/temp bees
+data modify storage thewii:vp_library/temp bees set from entity @s Item.tag.bees
 
-data remove storage thewii:apiculture/temp storageBees
-data modify storage thewii:apiculture/temp storageBees set from entity @s Item.tag.storageBees
+data remove storage thewii:vp_library/temp storageBees
+data modify storage thewii:vp_library/temp storageBees set from entity @s Item.tag.storageBees
 
-data remove storage thewii:apiculture/temp honeyLevel
-data modify storage thewii:apiculture/temp honeyLevel set from entity @s Item.tag.honeyLevel
+data remove storage thewii:vp_library/temp honeyLevel
+data modify storage thewii:vp_library/temp honeyLevel set from entity @s Item.tag.honeyLevel
 
 
 # Drop loot

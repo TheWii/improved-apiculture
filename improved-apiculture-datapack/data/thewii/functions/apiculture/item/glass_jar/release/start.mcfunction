@@ -1,13 +1,13 @@
 # Get entity nbt
-data remove storage thewii:apiculture/temp entity
-data modify storage thewii:apiculture/temp entity set from storage thewii:apiculture/temp mainhand.tag.apic.contents
+data remove storage thewii:vp_library/temp entity
+data modify storage thewii:vp_library/temp entity set from storage thewii:vp_library/temp mainhand.tag.apic.contents
 
 # Summon entity
 scoreboard players set #found twvp.temp 0
 execute anchored eyes positioned ^ ^ ^ run function thewii:apiculture/item/glass_jar/release/raycast
 
 # Modify entity data
-execute if data storage thewii:apiculture/temp entity{id:"minecraft:bee"} as @e[type=minecraft:bee,limit=1,tag=twia.new_entity] run function thewii:apiculture/general/entity/store_nbt/bee
+execute if data storage thewii:vp_library/temp entity{id:"minecraft:bee"} as @e[type=minecraft:bee,limit=1,tag=twia.new_entity] run function thewii:apiculture/general/entity/store_nbt/bee
 
 
 # Modify hand

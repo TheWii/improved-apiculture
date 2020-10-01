@@ -17,6 +17,7 @@ execute if data storage thewii:apiculture/data installed run function thewii:vp_
 # Clear storages
 data remove storage thewii:apiculture/data version
 data remove storage thewii:apiculture/data installed
+data remove storage thewii:apiculture/data item
 
 function thewii:apiculture/core/clear_storage
 
@@ -27,8 +28,8 @@ schedule clear thewii:apiculture/core/tick_10
 schedule clear thewii:apiculture/core/tick_20
 schedule clear thewii:apiculture/core/tick_100
 
-# Clear versioning
-scoreboard players reset #improved_apiculture thewii.load
+# Clear load version
+scoreboard players reset $improved_apiculture thewii.load
 
 # Uninstalled message
 tellraw @a [{"text":"[Datapack]: ","color":"yellow","bold":true},{"text":"Improved Apiculture was uninstalled. Disable the datapack to complete uninstallation or /reload to reinstall it.","color":"white","bold":false}]

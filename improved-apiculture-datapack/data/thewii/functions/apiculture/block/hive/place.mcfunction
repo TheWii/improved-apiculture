@@ -1,6 +1,6 @@
 # Clear storage
-data remove storage thewii:apiculture/temp bees
-data remove storage thewii:apiculture/temp honeyLevel
+data remove storage thewii:vp_library/temp bees
+data remove storage thewii:vp_library/temp honeyLevel
 
 # Invert direction
 scoreboard players operation #input twvp.temp = #direction twvp.temp
@@ -9,16 +9,16 @@ scoreboard players operation #facing twvp.temp = #output twvp.temp
 
 
 # Set block
-data modify storage thewii:apiculture/temp bees set from entity @s Item.tag.bees
+data modify storage thewii:vp_library/temp bees set from entity @s Item.tag.bees
 
 scoreboard players set #honey_level twvp.temp 0
-data modify storage thewii:apiculture/temp honeyLevel set from entity @s Item.tag.honeyLevel
+data modify storage thewii:vp_library/temp honeyLevel set from entity @s Item.tag.honeyLevel
 
-execute if data storage thewii:apiculture/temp {honeyLevel:'1'} run scoreboard players set #honey_level twvp.temp 1
-execute if data storage thewii:apiculture/temp {honeyLevel:'2'} run scoreboard players set #honey_level twvp.temp 2
-execute if data storage thewii:apiculture/temp {honeyLevel:'3'} run scoreboard players set #honey_level twvp.temp 3
-execute if data storage thewii:apiculture/temp {honeyLevel:'4'} run scoreboard players set #honey_level twvp.temp 4
-execute if data storage thewii:apiculture/temp {honeyLevel:'5'} run scoreboard players set #honey_level twvp.temp 5
+execute if data storage thewii:vp_library/temp {honeyLevel:'1'} run scoreboard players set #honey_level twvp.temp 1
+execute if data storage thewii:vp_library/temp {honeyLevel:'2'} run scoreboard players set #honey_level twvp.temp 2
+execute if data storage thewii:vp_library/temp {honeyLevel:'3'} run scoreboard players set #honey_level twvp.temp 3
+execute if data storage thewii:vp_library/temp {honeyLevel:'4'} run scoreboard players set #honey_level twvp.temp 4
+execute if data storage thewii:vp_library/temp {honeyLevel:'5'} run scoreboard players set #honey_level twvp.temp 5
 
 function thewii:apiculture/general/block/set_beehive
 

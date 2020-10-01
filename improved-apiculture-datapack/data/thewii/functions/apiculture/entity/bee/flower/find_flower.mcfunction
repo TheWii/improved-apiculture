@@ -1,7 +1,7 @@
 # Get coords
-execute store result score #x twvp.temp run data get storage thewii:apiculture/temp flowerPos.X 10
-execute store result score #y twvp.temp run data get storage thewii:apiculture/temp flowerPos.Y 10
-execute store result score #z twvp.temp run data get storage thewii:apiculture/temp flowerPos.Z 10
+execute store result score #x twvp.temp run data get storage thewii:vp_library/temp flowerPos.X 10
+execute store result score #y twvp.temp run data get storage thewii:vp_library/temp flowerPos.Y 10
+execute store result score #z twvp.temp run data get storage thewii:vp_library/temp flowerPos.Z 10
 
 # At coord
 function thewii:apiculture/general/find_coord

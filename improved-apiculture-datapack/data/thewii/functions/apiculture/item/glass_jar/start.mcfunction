@@ -1,5 +1,5 @@
 scoreboard players set #contents twvp.temp 0
-execute store result score #contents twvp.temp run data get storage thewii:apiculture/temp mainhand.tag.apic.hasContents
+execute store result score #contents twvp.temp run data get storage thewii:vp_library/temp mainhand.tag.apic.hasContents
 
 scoreboard players set #sneaking twvp.temp 0
 execute if predicate thewii:vp_library/player/is_sneaking run scoreboard players set #sneaking twvp.temp 1
