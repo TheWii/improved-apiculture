@@ -16,7 +16,7 @@
     ## Glass jar
 
         ###
-        data modify storage thewii:apiculture/data item.oak_beehive set value {id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:439000,display:{Name:'{"text":"Glass Jar","italic":false}',Lore:['{"text":"Empty","color":"gray","italic":false}']},Unbreakable:1b,HideFlags:127,apic:{hasContents:0b},ctc:{id:"glass_jar",from:"thewii:apiculture",traits:{"item":1b}}}}
+        data modify storage thewii:apiculture/data item.glass_jar set value {id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:439000,display:{Name:'{"text":"Glass Jar","italic":false}',Lore:['{"text":"Empty","color":"gray","italic":false}']},Unbreakable:1b,HideFlags:127,apic:{hasContents:0b},ctc:{id:"glass_jar",from:"thewii:apiculture",traits:{"item":1b}}}}
 
         ### Max nectar capacity:
         scoreboard players set #item.glass_jar.max_nectar twia.data 16
@@ -30,13 +30,18 @@
         ### Maximum age grown per use:
         scoreboard players set #item.glass_jar.max_nectar_growth twia.data 5
 
+    ## Beekeeping hat 
+
+        ###
+        data modify storage thewii:apiculture/data item.beekeeping_hat set value {id:"minecraft:chainmail_helmet",Count:1b,tag:{CustomModelData:439000,display:{Name:'{"text":"Beekeeping Hat","italic":false}'},Unbreakable:1b,HideFlags:127,ctc:{id:"beekeeping_hat",from:"thewii:apiculture",traits:{"item":1b,"armor":1b,"armor/head":1b}},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;195155489,-1610529010,-1096228359,-239126416],Slot:"head"}]}}
+
 
 # BLOCKS
 
     ## Large Beehive
 
         ### Nbt
-        data modify storage thewii:apiculture/data item.large_beehive set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439050,display:{Name:'{"text":"Large Beehive","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.large_hive"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],storageBees:[],CustomModelData:430000}}}}}
+        data modify storage thewii:apiculture/data item.large_beehive set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439060,display:{Name:'{"text":"Large Beehive","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.large_hive"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],storageBees:[],CustomModelData:430000}}}}}
 
         ### Max housing capacity:
         scoreboard players set #block.large_beehive.max_housing twia.data 5

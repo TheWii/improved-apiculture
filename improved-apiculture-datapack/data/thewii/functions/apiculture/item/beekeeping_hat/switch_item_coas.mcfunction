@@ -14,4 +14,4 @@ data modify block 29999999 0 4320 Items append from storage thewii:vp_library/te
 loot replace entity @s armor.head mine 29999999 0 4320 air{drop_contents:1b}
 
 # Remove tag
-tag @s remove twia.equip.beekeeping_helmet.coas
+tag @s remove twia.equip.beekeeping_hat.coas

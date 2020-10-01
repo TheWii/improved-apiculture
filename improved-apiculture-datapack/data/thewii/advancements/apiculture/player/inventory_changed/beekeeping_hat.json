@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_helmet\"}}"
+                        "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_hat\"}}"
                     }
                 ]
             }
@@ -17,6 +17,6 @@
         ]
     ],
     "rewards": {
-        "function": "thewii:apiculture/item/beekeeping_helmet/inv_changed"
+        "function": "thewii:apiculture/item/beekeeping_hat/inv_changed"
     }
 }

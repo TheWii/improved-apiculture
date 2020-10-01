@@ -5,7 +5,16 @@
     "targeted_entity": {
       "equipment": {
         "head": {
-          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_helmet\"}}"
+          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_hat\"}}"
+        },
+        "chest": {
+          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_tunic\"}}"
+        },
+        "legs": {
+          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_pants\"}}"
+        },
+        "feet": {
+          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_boots\"}}"
         }
       }
     }

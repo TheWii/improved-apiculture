@@ -6,7 +6,7 @@
   
   "overrides": [
     
-    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/item/beekeeping_helmet" }
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/item/beekeeping_hat" }
 
   ]
 }

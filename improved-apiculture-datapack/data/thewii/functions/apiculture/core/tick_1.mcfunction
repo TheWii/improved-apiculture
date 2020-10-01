@@ -17,7 +17,7 @@ execute as @e[type=minecraft:item,tag=!twia.checked] run function thewii:apicult
 # Players
 
 ## Equipped armor
-execute as @a[tag=twia.equip.beekeeping_helmet] run function thewii:apiculture/item/beekeeping_helmet/switch_item
+execute as @a[tag=twia.equip.beekeeping_hat] run function thewii:apiculture/item/beekeeping_hat/switch_item
 
 
 # Procriation time
