@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thewii:apiculture/beekeeping_tunic"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thewii:apiculture/recipe/beekeeping_tunic",
+    "loot": [
+      "thewii:apiculture/item/beekeeping_tunic"
+    ]
+  }
+}
