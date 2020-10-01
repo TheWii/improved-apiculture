@@ -25,7 +25,7 @@ function thewii:apiculture/general/block/set_beehive
 
 
 # Summon armor stand
-summon minecraft:armor_stand ~ ~0.5 ~ {Marker:1b,Small:1b,Invisible:1,Tags:["twia.new_armorstand","twia.tick_2","twia.house","twia.large_hive"],ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{CustomModelData:439050,bees:[]}}]}
+summon minecraft:armor_stand ~ ~0.5 ~ {Marker:1b,Small:1b,Invisible:1,Tags:["twia.new_armorstand","twia.tick_2","twia.house","twia.large_hive"],ArmorItems:[{},{},{},{id:"minecraft:stone_button",Count:1b,tag:{CustomModelData:439060,bees:[]}}]}
 
 #tellraw @a {"score":{"name":"#facing","objective":"twvp.temp"}}
 data modify storage thewii:apiculture/temp storageBees set from entity @s Item.tag.storageBees

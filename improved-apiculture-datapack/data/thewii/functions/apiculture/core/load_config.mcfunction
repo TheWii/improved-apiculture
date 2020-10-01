@@ -39,7 +39,7 @@
     ## Large Beehive
 
         ### Nbt
-        data modify storage thewii:apiculture/data item.large_beehive set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439050,display:{Name:'{"text":"Large Beehive","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.large_hive"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],storageBees:[],CustomModelData:430000}}}}}
+        data modify storage thewii:apiculture/data item.large_beehive set value {id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:439060,display:{Name:'{"text":"Large Beehive","italic":false}'},EntityTag:{Tags:["twvp.place_block","twia.large_hive"],Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Item:{id:"minecraft:stone_button",Count:1b,tag:{honeyLevel:0,bees:[],storageBees:[],CustomModelData:430000}}}}}
 
         ### Max housing capacity:
         scoreboard players set #block.large_beehive.max_housing twia.data 5
