@@ -31,4 +31,4 @@ schedule clear thewii:apiculture/core/tick_100
 scoreboard players reset #improved_apiculture thewii.load
 
 # Uninstalled message
-tellraw @a [{"text":"[Datapack]: ","color":"yellow","bold":true},{"text":"Improved Apiculture was uninstalled. Disable the datapack to complete uninstallation.","color":"white","bold":false}]
+tellraw @a [{"text":"[Datapack]: ","color":"yellow","bold":true},{"text":"Improved Apiculture was uninstalled. Disable the datapack to complete uninstallation or /reload to reinstall it.","color":"white","bold":false}]

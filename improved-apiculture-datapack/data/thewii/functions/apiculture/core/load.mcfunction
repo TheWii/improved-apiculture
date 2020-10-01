@@ -1,3 +1,5 @@
+#> thewii:apiculture/core/load
+
 # Clear schedules
 schedule clear thewii:apiculture/core/tick_2
 schedule clear thewii:apiculture/core/tick_5

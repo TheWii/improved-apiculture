@@ -1,3 +1,5 @@
+#> thewii:apiculture/core/install
+
 # Objectives
 scoreboard objectives add twia.data dummy
 
@@ -14,19 +16,11 @@ execute unless data storage thewii:apiculture/data installed run function thewii
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/block_placement/add
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/loaded_chunk/add
 
+# Installed
+data modify storage thewii:apiculture/data installed set value 1b
 
-# Vanilla+ Lib math scores
-scoreboard players set #-1 twvp.math -1
-scoreboard players set #5 twvp.math 5
-scoreboard players set #10 twvp.math 10
-scoreboard players set #20 twvp.math 20
-
-team add twia.nocollision "twia.nocollision"
-team modify twia.nocollision collisionRule never
-
-
-# Version
-data merge storage thewii:apiculture/data {version:"0.0.1",installed:1b}
+# Versioning
+function thewii:apiculture/core/version
 
 # Installed message
-tellraw @a [{"text":"[Datapack]: ","color":"yellow","bold":true},{"text":"Improved Apiculture was installed!","color":"white","bold":false}]
+tellraw @a [{"text":"[Datapack]: ","color":"yellow","bold":true},{"text":"Improved Apiculture v","color":"white","bold":false},{"score":{"name":"$version.major","objective":"twia.data"},"color":"white","bold":false},{"text":".","color":"white","bold":false},{"score":{"name":"$version.minor","objective":"twia.data"},"color":"white","bold":false},{"text":".","color":"white","bold":false},{"score":{"name":"$version.patch","objective":"twia.data"},"color":"white","bold":false},{"text":" was installed!","color":"white","bold":false}]

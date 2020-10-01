@@ -1,3 +1,5 @@
+#> thewii:apiculture/core/load2
+
 #define objective thewii.load
 
 #define objective twvp.data
@@ -35,7 +37,6 @@
 #define score_holder #leave_hives
 
 #define storage thewii:apiculture/data
-#define storage thewii:apiculture/temp
 
 #define storage thewii:vp_library/data
 #define storage thewii:vp_library/temp
@@ -56,6 +57,8 @@
 #define tag twia.hive.acacia
 #define tag twia.hive.dark_oak
 
+# Datapack version
+scoreboard players set $improved_apiculture thewii.load 000100
 
 # Install
 execute unless data storage thewii:apiculture/data installed run function thewii:apiculture/core/install
@@ -69,6 +72,9 @@ execute unless data storage thewii:vp_library/data modules.loaded_chunk run func
 # Set config
 function thewii:apiculture/core/load_config
 
+# Update
+execute store result score $version.merged twia.data run data get storage thewii:apiculture/data version.merged
+execute if score $improved_apiculture thewii.load > $version.merged twia.data run function thewii:apiculture/core/update
 
 # Schedules
 schedule function thewii:apiculture/core/tick_2 1t
@@ -76,7 +82,3 @@ schedule function thewii:apiculture/core/tick_5 2t
 schedule function thewii:apiculture/core/tick_10 1t
 schedule function thewii:apiculture/core/tick_20 2t
 schedule function thewii:apiculture/core/tick_100 4t
-
-
-# Load
-scoreboard players set #improved_apiculture thewii.load 000001
