@@ -33,6 +33,11 @@
         ### Maximum age grown per use:
         scoreboard players set #item.glass_jar.max_nectar_growth twia.data 5
 
+    ## Beekeeping hat 
+
+        ###
+        data modify storage thewii:apiculture/data item.beekeeping_hat set value {id:"minecraft:chainmail_helmet",Count:1b,tag:{CustomModelData:439000,display:{Name:'{"text":"Beekeeping Hat","italic":false}'},Unbreakable:1b,HideFlags:127,ctc:{id:"beekeeping_hat",from:"thewii:apiculture",traits:{"item":1b,"armor":1b,"armor/head":1b}},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;195155489,-1610529010,-1096228359,-239126416],Slot:"head"}]}}
+
 
 # BLOCKS
 

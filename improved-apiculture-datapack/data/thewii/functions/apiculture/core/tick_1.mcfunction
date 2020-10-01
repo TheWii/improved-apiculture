@@ -13,8 +13,12 @@ execute if score #rain twvp.temp matches 1 run scoreboard players set #leave_hiv
 # Unchecked items
 execute as @e[type=minecraft:item,tag=!twia.checked] run function thewii:apiculture/entity/item/check
 
+
 # Players
-#execute as @a run function thewii:apiculture/player/tick_1
+
+## Equipped armor
+execute as @a[tag=twia.equip.beekeeping_hat] run function thewii:apiculture/item/beekeeping_hat/switch_item
+
 
 # Procriation time
 execute if score #daytime twvp.temp matches 1 as @e[type=#thewii:apiculture/custom_block,tag=twia.house] run function thewii:apiculture/block/hive/procriate/start

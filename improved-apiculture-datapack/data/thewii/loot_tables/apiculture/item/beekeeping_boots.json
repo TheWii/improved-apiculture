@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_boots",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:439000,display:{Name:'{\"text\":\"Beekeeping Boots\",\"italic\":false}',color:16775357},HideFlags:127,ctc:{id:\"beekeeping_boots\",from:\"thewii:apiculture\",traits:{\"item\":1b,\"armor\":1b,\"armor/feet\":1b}}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

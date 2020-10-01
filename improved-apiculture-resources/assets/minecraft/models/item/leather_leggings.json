@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/leather_leggings"
+  },
+  
+  "overrides": [
+    
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/item/beekeeping_pants" }
+
+  ]
+}

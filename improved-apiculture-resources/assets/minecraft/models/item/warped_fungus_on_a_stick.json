@@ -30,7 +30,9 @@
     { "predicate": { "custom_model_data": 439021 }, "model": "thewii:apiculture/item/glass_jar/nectar_13" },
     { "predicate": { "custom_model_data": 439022 }, "model": "thewii:apiculture/item/glass_jar/nectar_14" },
     { "predicate": { "custom_model_data": 439023 }, "model": "thewii:apiculture/item/glass_jar/nectar_15" },
-    { "predicate": { "custom_model_data": 439024 }, "model": "thewii:apiculture/item/glass_jar/nectar_16" }
+    { "predicate": { "custom_model_data": 439024 }, "model": "thewii:apiculture/item/glass_jar/nectar_16" },
+
+    { "predicate": { "custom_model_data": 439030 }, "model": "thewii:apiculture/item/beekeeping_hat" }
 
   ]
 }

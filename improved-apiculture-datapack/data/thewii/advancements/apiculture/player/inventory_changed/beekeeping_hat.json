@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "equipped": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_hat\"}}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "equipped"
+        ]
+    ],
+    "rewards": {
+        "function": "thewii:apiculture/item/beekeeping_hat/inv_changed"
+    }
+}
