@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "hurtbee": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:bee"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hurtbee"
+        ]
+    ],
+    "rewards": {
+        "function": "thewii:apiculture/player/hurt_bee"
+    }
+}

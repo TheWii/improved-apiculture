@@ -26,6 +26,5 @@ scoreboard players operation #interval twvp.temp %= #10 twvp.math
 #execute if entity @s[tag=twia.found_house] if score #interval twvp.temp matches 0 run function thewii:apiculture/entity/bee/check/start
 
 
-# Targeting entity
-execute if predicate thewii:apiculture/entity/targeting_beekeeper run function thewii:apiculture/entity/bee/targeting/beekeeper
-#execute if predicate thewii:apiculture/entity/targeting at @s run particle flame ~ ~ ~ 0.2 0.2 0.2 0 5 normal 
+# Targeting beekeeper
+execute if predicate thewii:apiculture/entity/targeting_beekeeper run effect give @s minecraft:weakness 1 255 true

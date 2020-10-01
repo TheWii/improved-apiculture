@@ -3,7 +3,11 @@
   "entity": "this",
   "predicate": {
     "targeted_entity": {
-      "nbt": "{Tags:[\"twia.equipped.beekeeping_helmet\"]}"
+      "equipment": {
+        "head": {
+          "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_helmet\"}}"
+        }
+      }
     }
   }
 }

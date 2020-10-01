@@ -1,20 +1,21 @@
 {
+	"credit": "Made with Blockbench",
 	"texture_size": [48, 48],
 	"textures": {
-		"layer0": "thewii:apiculture/item/beekeeping_helmet",
-		"particle": "thewii:apiculture/item/beekeeping_helmet"
+		"particle": "thewii:apiculture/item/beekeeping_helmet",
+		"layer0": "thewii:apiculture/item/beekeeping_helmet"
 	},
 	"elements": [
 		{
 			"name": "top",
 			"from": [4, 8, 4],
-			"to": [12, 12, 12],
+			"to": [12, 11, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [12, 16, 12]},
 			"faces": {
-				"north": {"uv": [2.66633, 2.66633, 5.33267, 3.99933], "texture": "#layer0"},
-				"east": {"uv": [0, 2.66633, 2.66633, 3.99933], "texture": "#layer0"},
-				"south": {"uv": [8, 2.66633, 10.66633, 3.99933], "texture": "#layer0"},
-				"west": {"uv": [5.33333, 2.66633, 7.99933, 3.99933], "texture": "#layer0"},
+				"north": {"uv": [2.66633, 2.66633, 5.33267, 3.66633], "texture": "#layer0"},
+				"east": {"uv": [0, 2.66633, 2.66633, 3.66633], "texture": "#layer0"},
+				"south": {"uv": [8, 2.66633, 10.66633, 3.66633], "texture": "#layer0"},
+				"west": {"uv": [5.33333, 2.66633, 7.999, 3.66633], "texture": "#layer0"},
 				"up": {"uv": [2.66633, 0, 5.33267, 2.66633], "texture": "#layer0"}
 			}
 		},
@@ -33,16 +34,55 @@
 			}
 		},
 		{
-			"name": "chain",
+			"name": "north",
 			"from": [2, -4, 2],
-			"to": [14, 6, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [12, 10, 12]},
+			"to": [14, 6, 2],
 			"faces": {
 				"north": {"uv": [4, 9, 8, 12.33333], "texture": "#layer0"},
-				"east": {"uv": [0, 9, 4, 12.33333], "texture": "#layer0"},
+				"east": {"uv": [0, 9, 4, 12.33333], "texture": "#missing"},
 				"south": {"uv": [12, 9, 16, 12.33333], "texture": "#layer0"},
-				"west": {"uv": [8, 9, 12, 12.33333], "texture": "#layer0"},
-				"up": {"uv": [4, 4.33333, 8, 8.33333], "texture": "#layer0"}
+				"west": {"uv": [8, 9, 12, 12.33333], "texture": "#missing"},
+				"up": {"uv": [4, 4.33333, 8, 8.33333], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "south",
+			"from": [2, -4, 14],
+			"to": [14, 6, 14],
+			"faces": {
+				"north": {"uv": [4, 9, 8, 12.33333], "texture": "#layer0"},
+				"east": {"uv": [0, 9, 4, 12.33333], "texture": "#missing"},
+				"south": {"uv": [12, 9, 16, 12.33333], "texture": "#layer0"},
+				"west": {"uv": [8, 9, 12, 12.33333], "texture": "#missing"},
+				"up": {"uv": [4, 4.33333, 8, 8.33333], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "east",
+			"from": [14, -4, 2],
+			"to": [14, 6, 14],
+			"faces": {
+				"north": {"uv": [0, 9, 4, 12.33333], "texture": "#missing"},
+				"east": {"uv": [12, 9, 16, 12.33333], "texture": "#layer0"},
+				"south": {"uv": [8, 9, 12, 12.33333], "texture": "#missing"},
+				"west": {"uv": [4, 9, 8, 12.33333], "texture": "#layer0"},
+				"up": {"uv": [4, 4.33333, 8, 8.33333], "rotation": 270, "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 0], "rotation": 90, "texture": "#missing"}
+			}
+		},
+		{
+			"name": "west",
+			"from": [2, -4, 2],
+			"to": [2, 6, 14],
+			"faces": {
+				"north": {"uv": [8, 9, 12, 12.33333], "texture": "#missing"},
+				"east": {"uv": [4, 9, 8, 12.33333], "texture": "#layer0"},
+				"south": {"uv": [0, 9, 4, 12.33333], "texture": "#missing"},
+				"west": {"uv": [12, 9, 16, 12.33333], "texture": "#layer0"},
+				"up": {"uv": [4, 4.33333, 8, 8.33333], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 0], "rotation": 270, "texture": "#missing"}
 			}
 		}
 	],
@@ -84,5 +124,12 @@
 			"translation": [0, 0.5, 0],
 			"scale": [0.75, 0.75, 0.75]
 		}
-	}
+	},
+	"groups": [0, 1,
+		{
+			"name": "chain",
+			"origin": [8, 8, 8],
+			"children": [2, 3, 4, 5]
+		}
+	]
 }

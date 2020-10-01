@@ -5,8 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:chainmail_helmet",
-                        "nbt": "{ctc:{from:\"thewii:alchemist\",id:\"beekeeping_helmet\"}"
+                        "nbt": "{ctc:{from:\"thewii:apiculture\",id:\"beekeeping_helmet\"}}"
                     }
                 ]
             }
@@ -18,6 +17,6 @@
         ]
     ],
     "rewards": {
-        "function": "thewii:apiculture/item/beekeeping_helmet/inv"
+        "function": "thewii:apiculture/item/beekeeping_helmet/inv_changed"
     }
 }
