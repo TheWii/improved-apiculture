@@ -1,3 +1,5 @@
+#> thewii:apiculture/block/hive/tick_2
+
 # Destroyed
 execute if entity @s[tag=twia.nest] at @s unless block ~ ~ ~ minecraft:bee_nest run function thewii:apiculture/block/hive/destroyed
 execute if entity @s[tag=twia.hive] at @s unless block ~ ~ ~ minecraft:beehive run function thewii:apiculture/block/hive/destroyed

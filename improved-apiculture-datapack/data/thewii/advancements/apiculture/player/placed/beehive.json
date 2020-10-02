@@ -13,6 +13,6 @@
         ]
     ],
     "rewards": {
-        "function": "thewii:apiculture/player/placed/hive/start"
+        "function": "thewii:apiculture/player/placed/beehive/start"
     }
 }

@@ -14,4 +14,4 @@ execute if entity @s[tag=twia.hive.jungle] run loot spawn ~ ~ ~ loot thewii:apic
 execute if entity @s[tag=twia.hive.acacia] run loot spawn ~ ~ ~ loot thewii:apiculture/block/acacia_beehive
 execute if entity @s[tag=twia.hive.dark_oak] run loot spawn ~ ~ ~ loot thewii:apiculture/block/dark_oak_beehive
 
-execute as @e[type=minecraft:item,limit=1,sort=nearest,nbt={Age:0s}] run function thewii:apiculture/block/hive/drop_frame2
+execute as @e[type=minecraft:item,tag=!global.ignore,distance=..1,limit=1,sort=nearest,nbt={Age:0s}] run function thewii:apiculture/block/hive/drop_frame2

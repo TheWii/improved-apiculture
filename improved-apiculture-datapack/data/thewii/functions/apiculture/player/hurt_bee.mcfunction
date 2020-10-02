@@ -7,4 +7,4 @@
 advancement revoke @s only thewii:apiculture/player/hurt_bee
 
 # Check if bees are targeting beekeeper
-execute as @e[type=minecraft:bee,distance=..3] if predicate thewii:apiculture/entity/targeting_beekeeper run effect give @s minecraft:weakness 1 255 true
+execute as @e[type=minecraft:bee,tag=!global.ignore,distance=..3] if predicate thewii:apiculture/entity/targeting_beekeeper run effect give @s minecraft:weakness 1 255 true

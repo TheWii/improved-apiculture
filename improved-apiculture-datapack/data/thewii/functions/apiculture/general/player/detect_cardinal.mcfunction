@@ -1,4 +1,4 @@
-#> thewii:apiculture/general/entity/detect_cardinal
+#> thewii:apiculture/general/player/detect_cardinal
 
 # Detect rotation and set direction numbers
 # 1 - north

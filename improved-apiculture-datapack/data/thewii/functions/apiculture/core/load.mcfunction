@@ -12,9 +12,10 @@ schedule clear thewii:apiculture/core/tick_100
 scoreboard players set #load thewii.load 1
 
 # Vanilla+ Lib Modules
-execute unless score #vplib.math thewii.load matches 010000 run scoreboard players set #load thewii.load -1
-execute unless score #vplib.click_detections thewii.load matches 010000 run scoreboard players set #load thewii.load -1
-execute unless score #vplib.block_placement thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score $vplib.math thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score $vplib.click_detections thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score $vplib.block_placement thewii.load matches 010000 run scoreboard players set #load thewii.load -1
+execute unless score $vplib.loaded_chunk thewii.load matches 010000 run scoreboard players set #load thewii.load -1
 
 # 1.16
 scoreboard players set #1.16 thewii.load 0
@@ -27,4 +28,4 @@ execute if score #load thewii.load matches 1 run function thewii:apiculture/core
 
 # Fail load messages
 execute if score #load thewii.load matches 0 run tellraw @a [{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Improved Apiculture failed to load. It requires Minecraft 1.16 or above.","color":"white","bold":false}]
-execute if score #load thewii.load matches -1 run tellraw @a [{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Improved Apiculture failed to load. Library files are either missing or there are incompatibilities between installed datapacks. Please, download the latest version.","color":"white","bold":false}]
+execute if score #load thewii.load matches -1 run tellraw @a [{"text":"[Datapack]: ","color":"red","bold":true},{"text":"Improved Apiculture failed to load. Library files are either missing or there are incompatibilities between installed datapacks. Please, download the ","color":"white","bold":false},{"text":"latest version.","color":"white","bold":false,"underlined":true,"clickEvent": {"action": "open_url","value": "https://github.com/TheWii/improved-apiculture/releases/latest"}}]

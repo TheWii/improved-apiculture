@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 6,
-        "description": "Improved apiculture datapack."
+        "description": [{"text":"Improved apiculture.","color":"#F8FF91"},{"text":"\nVersion 0.1.0 by TheWii","color":"dark_gray"}]
     }
 }

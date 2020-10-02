@@ -1,3 +1,5 @@
+#> thewii:apiculture/core/tick/1
+
 # Daytime
 execute store result score #daytime twvp.temp run time query daytime
 
@@ -11,7 +13,8 @@ execute if score #rain twvp.temp matches 1 run scoreboard players set #leave_hiv
 
 
 # Unchecked items
-execute as @e[type=minecraft:item,tag=!twia.checked] run function thewii:apiculture/entity/item/check
+execute as @e[type=minecraft:item,tag=!twia.checked,tag=!global.ignore,tag=!global.ignore.pos,tag=!global.ignore.kill] run function thewii:apiculture/entity/item/check
+
 
 # Players
 

@@ -8,7 +8,7 @@ data remove storage thewii:vp_library/temp item
 data modify storage thewii:vp_library/temp item set from entity @s Item
 
 
-# Check if item is a beehive loot
+# Check if item is a beehive loot(Honeycomb without a Thrower with a hive nearby)
 execute if data storage thewii:vp_library/temp item{id:"minecraft:honeycomb",Count:3b} unless data entity @s Thrower at @s if entity @e[type=#thewii:apiculture/custom_block,tag=twia.house,distance=..0.5] run function thewii:apiculture/entity/item/honeycomb
 
 # Check if item is a beekeeping helmet

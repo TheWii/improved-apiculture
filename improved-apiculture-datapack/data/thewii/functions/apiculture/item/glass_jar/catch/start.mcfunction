@@ -1,3 +1,5 @@
+#> thewii:apiculture/item/glass_jar/catch/start
+
 # Raycast
 scoreboard players set #found twvp.temp 0
 execute at @s anchored eyes positioned ^ ^ ^ run function thewii:apiculture/item/glass_jar/catch/raycast

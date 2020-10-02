@@ -20,11 +20,11 @@ execute store result score $version.merged twia.data run data get storage thewii
 execute if score $improved_apiculture thewii.load > $version.merged twia.data run function thewii:apiculture/core/update
 
 # Schedules
-schedule function thewii:apiculture/core/tick_2 1t
-schedule function thewii:apiculture/core/tick_5 2t
-schedule function thewii:apiculture/core/tick_10 1t
-schedule function thewii:apiculture/core/tick_20 2t
-schedule function thewii:apiculture/core/tick_100 4t
+schedule function thewii:apiculture/core/tick/2 1t
+schedule function thewii:apiculture/core/tick/5 2t
+schedule function thewii:apiculture/core/tick/10 1t
+#schedule function thewii:apiculture/core/tick/20 2t
+#schedule function thewii:apiculture/core/tick/100 4t
 
 
 

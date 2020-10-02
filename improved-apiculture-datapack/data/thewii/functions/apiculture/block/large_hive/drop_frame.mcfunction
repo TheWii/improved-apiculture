@@ -12,4 +12,4 @@ data modify storage thewii:vp_library/temp honeyLevel set from entity @s Item.ta
 # Drop loot
 loot spawn ~ ~ ~ loot thewii:apiculture/block/large_beehive
 
-execute as @e[type=minecraft:item,limit=1,sort=nearest,nbt={Age:0s}] run function thewii:apiculture/block/large_hive/drop_frame2
+execute as @e[type=minecraft:item,tag=!global.ignore,distance=..1,limit=1,sort=nearest,nbt={Age:0s}] run function thewii:apiculture/block/large_hive/drop_frame2

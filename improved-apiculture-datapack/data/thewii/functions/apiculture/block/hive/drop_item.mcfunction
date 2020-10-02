@@ -7,5 +7,5 @@ execute if entity @s[tag=twia.hive.jungle] run data modify storage thewii:vp_lib
 execute if entity @s[tag=twia.hive.acacia] run data modify storage thewii:vp_library/temp item set from storage thewii:apiculture/data item.acacia_beehive
 execute if entity @s[tag=twia.hive.dark_oak] run data modify storage thewii:vp_library/temp item set from storage thewii:apiculture/data item.dark_oak_beehive
 
-execute as @e[type=minecraft:item,distance=..1,sort=nearest,limit=1,nbt={Item:{id:"minecraft:beehive",Count:1b}}] run function thewii:apiculture/general/entity/dropped_item/find_item
+execute as @e[type=minecraft:item,tag=!global.ignore,distance=..1,sort=nearest,limit=1,nbt={Item:{id:"minecraft:beehive",Count:1b}}] run function thewii:apiculture/general/entity/dropped_item/find_item
 execute as @e[type=minecraft:item,tag=twia.matched_item,limit=1] run function thewii:apiculture/block/hive/drop_item2

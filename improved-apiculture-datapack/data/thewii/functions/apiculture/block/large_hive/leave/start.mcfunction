@@ -2,7 +2,7 @@ scoreboard players set #storage_amount twvp.temp 0
 
 # Get angry nbt
 data remove storage thewii:vp_library/temp angryAt
-execute at @s run data modify storage thewii:vp_library/temp angryAt set from entity @e[type=minecraft:bee,limit=1,sort=nearest,distance=..5] AngryAt
+execute at @s run data modify storage thewii:vp_library/temp angryAt set from entity @e[type=minecraft:bee,tag=!global.ignore,limit=1,sort=nearest,distance=..5] AngryAt
 
 # Array
 data remove storage thewii:vp_library/temp array

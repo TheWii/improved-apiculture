@@ -36,9 +36,6 @@ execute if data storage thewii:vp_library/temp item.tag.apic.contents{id:"apicul
 
 
 # Replace mainhand
-setblock ~ 255 ~ minecraft:yellow_shulker_box
-
-data modify block ~ 255 ~ Items append from storage thewii:vp_library/temp item
-loot replace entity @s weapon.mainhand 1 mine ~ 255 ~ minecraft:air{drop_contents:1b}
-
-setblock ~ 255 ~ minecraft:air
+data remove block 29999999 0 4320 Items
+data modify block 29999999 0 4320 Items append from storage thewii:vp_library/temp item
+loot replace entity @s weapon.mainhand 1 mine 29999999 0 4320 minecraft:air{drop_contents:1b}

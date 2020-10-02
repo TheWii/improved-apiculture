@@ -23,5 +23,5 @@ execute if score #interval twvp.temp matches 6 run function thewii:apiculture/bl
 # Bee ticks in storage(every 100 ticks)
 execute if score @s twia.interval matches 1 run function thewii:apiculture/block/large_hive/housing/ticks_in_storage
 
-#
+
 #execute at @s run particle smoke ~ ~ ~ 0.275 0.275 0.275 0.025 2 normal

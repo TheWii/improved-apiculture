@@ -1,0 +1,1 @@
+#schedule function thewii:apiculture/core/tick/20 20t
