@@ -21,6 +21,8 @@ execute as @e[type=minecraft:item,tag=!twia.checked,tag=!global.ignore,tag=!glob
 ## Equipped armor
 execute as @a[tag=twia.equip.beekeeping_hat] run function thewii:apiculture/item/beekeeping_hat/switch_item
 
+# Queen bee
+execute as @e[type=minecraft:armor_stand,tag=twia.queen_bee] run function thewii:apiculture/entity/queen_bee/tick
 
 # Procriation time
 execute if score #daytime twvp.temp matches 1 as @e[type=#thewii:apiculture/custom_block,tag=twia.house] run function thewii:apiculture/block/hive/procriate/start

@@ -10,6 +10,8 @@ scoreboard objectives add twia.honey dummy
 scoreboard objectives add twia.regen dummy
 scoreboard objectives add twia.max_housing dummy
 
+scoreboard objectives add twia.health dummy
+
 # Vanilla+ Lib modules
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/math/add
 execute unless data storage thewii:apiculture/data installed run function thewii:vp_library/click_detections/add

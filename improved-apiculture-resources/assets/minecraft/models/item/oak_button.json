@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/oak_button_inventory",
+  
+  "overrides": [
+    
+    { "predicate": { "custom_model_data": 439000 }, "model": "thewii:apiculture/entity/queen_bee/normal" }
+  ]
+}

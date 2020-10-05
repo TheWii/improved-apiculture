@@ -1,0 +1,4 @@
+#> thewii:apiculture/entity/queen_bee/summon
+
+summon bee ~ ~ ~ {Health:1000f,Silent:1b,Attributes:[{Name:generic.max_health,Base:1024d}],CannotEnterHiveTicks:2146473647,ActiveEffects:[{Id:14b,Duration:2146473647,Amplifier:0b,ShowParticles:0b}],Tags:["twia.queen_bee","twia.queen_bee.new"],Passengers:[{id:"minecraft:armor_stand",Tags:["twia.queen_bee","twia.queen_bee.new"],Small:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:oak_button",Count:1b,tag:{CustomModelData:439000}}],Passengers:[{id:"minecraft:slime",Health:1000f,Attributes:[{Name:generic.max_health,Base:1024d}],ActiveEffects:[{Id:14b,Duration:2146473647,Amplifier:0b,ShowParticles:0b}],Team:"twvp.nocollision",Tags:["twia.queen_bee","twia.queen_bee.new"],Size:1b,Silent:1b}]}]}
+execute as @e[type=minecraft:armor_stand,tag=twia.queen_bee.new,limit=1] run function thewii:apiculture/entity/queen_bee/summon2

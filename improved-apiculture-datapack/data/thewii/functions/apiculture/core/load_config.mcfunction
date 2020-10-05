@@ -11,6 +11,11 @@
 
         ### Time to regenerate stinger(1 = 0.5s)
         scoreboard players set #bee.stinger_regen_time twia.data 10
+    
+    ## Queen bee
+
+        ### Max health
+        scoreboard players set #queen_bee.max_health twia.data 100
 
 
 
